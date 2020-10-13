@@ -23,10 +23,24 @@ h5{
     padding: 2px;    
 }
 
+#finish{
+    color: red;       
+    text-align: center;
+    margin: 5px;       
+}
+
 
 /* Body styling */
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;    
     background-image: url("../images/space.jpg");
+}
+
+.game{
+    flex: 1;
 }
 
 /* header section*/
