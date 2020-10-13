@@ -8,9 +8,7 @@
 
 /* text styling */
 h1{ 
-    font-family: 'Press Start 2P', cursive;    
-    padding: 2px;
-    line-height: 100px;    
+    font-family: 'Press Start 2P', cursive;  
 }
 
 h2{    
@@ -46,10 +44,14 @@ header{
     border: 3px solid red;   
     border-radius: 10px;    
     color: rgb(255, 251, 0); 
-    height: 100px;
+    height: 100px;    
     background: rgb(105,102,102);
     margin: 5px; 
     text-align: center;
+}
+
+.score h1{
+    line-height: 100px;
 }
 
 /* button styling */
@@ -77,3 +79,22 @@ header{
 }
 
 /* @media screen section */
+
+@media screen and (max-width: 768px){
+  .card{
+      height: 100px;
+  }
+   
+}
+
+@media screen and (max-width: 576px){
+    .card{
+        height: 75px; 
+    }
+    .score{
+        height: 75px;      
+    }
+    .score h1{
+        line-height: 75px;
+    }    
+}
