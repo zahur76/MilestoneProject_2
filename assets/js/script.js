@@ -30,9 +30,9 @@ $(document).ready(function(){
     }
 
     function game(){
-        let level = $("input[type=radio][name=level]:checked").val(); 
-        console.log($("input[type=radio][name=level]:checked").val())       
+        let level = $("input[type=radio][name=level]:checked").val();              
         gameArray(level);
+        
     }
 
 })

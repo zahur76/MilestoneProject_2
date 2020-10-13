@@ -31,14 +31,121 @@ header{
 }
 
 /* Card section */
-.card{
+/*.card{
     border: 2px solid rgb(226, 5, 5);
     height: 125px;
     background: rgb(105, 102, 102);
     margin: 5px;
     border-radius: 10px;
+}*/
+
+.ackbar{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/ackbar.png");
+    margin: 5px;
+    border-radius: 10px;
 }
 
+.boba{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/boba.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.chewy{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/chewy.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.cpo{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/cpo.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.lando{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/lando.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.leai{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/leia.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.luke{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/luke.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.obi{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/obi.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.r2{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/r2.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.solo{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/solo.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.vader{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/vader.png");
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.yoda{
+    border: 2px solid rgb(226, 5, 5);
+    height: 125px;
+    background: white;
+    background-image:url("images/yoda.png");
+    margin: 5px;
+    border-radius: 10px;
+}
 /* counter */
 .score{
     border: 3px solid red;   
@@ -114,14 +221,14 @@ input {
 /* @media screen section */
 
 @media screen and (max-width: 768px){
-  .card{
+  .card, .vader, .yoda, .luke, .boba, .r2, .cpo, .solo, .chewy, .obi, .leia, .ackbar, .lando{
       height: 100px;
   }
    
 }
 
 @media screen and (max-width: 576px){
-    .card{
+    .card, .vader, .yoda, .luke, .boba, .r2, .cpo, .solo, .chewy, .obi, .leia, .ackbar, .lando{
         height: 75px; 
     }
     .score{
