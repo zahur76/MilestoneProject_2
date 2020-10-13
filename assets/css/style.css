@@ -7,12 +7,20 @@
 }
 
 /* text styling */
+h1{ 
+    font-family: 'Press Start 2P', cursive;    
+    padding: 2px;
+    line-height: 100px;    
+}
+
 h2{    
     font-family: 'Roboto', sans-serif;    
     font-weight: 400;
     color: rgba(67, 165, 207, 0.6);
     background:rgba(0,0,0,0.6);
 }
+
+
 
 /* Body styling */
 body{
@@ -32,6 +40,18 @@ header{
     margin: 5px;
     border-radius: 10px;
 }
+
+/* counter */
+.score{
+    border: 3px solid red;   
+    border-radius: 10px;    
+    color: rgb(255, 251, 0); 
+    height: 100px;
+    background: rgb(105,102,102);
+    margin: 5px; 
+    text-align: center;
+}
+
 /* button styling */
 .button{
     border: 2px solid rgb(105, 102, 102);
@@ -44,10 +64,16 @@ header{
     margin: 5px;    
 }
 
-.controls{
+.controls, .facts{
     text-align: center;
 }
 
 /* modal section */
 /* Footer section */
+
+.footer{    
+    height: 60px;
+    background-color: rgba(105,102,102,0.5);         
+}
+
 /* @media screen section */
