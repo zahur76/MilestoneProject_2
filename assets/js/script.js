@@ -48,10 +48,10 @@ $(document).ready(function(){
     
     // function to show level select modal
     $("#start").one("click", function(){
+        document.getElementById("myAudio1").play();
         $("#levelSelect").show();
     })
 
-    // function to remove level select modal
     // Removes level select Modal and starts game    
     $("#level").click(function(){
         if($("input[type=radio][name=level]:checked").length===1){
@@ -109,12 +109,14 @@ $(document).ready(function(){
             $("#turns").html("<h1>" + totalTurns + "</h1>");                       
             totalMatch += 1;            
             if(totalMatch===(newArray.length)/2){
-                // All cards have been matched and game ends                 
+                // All cards have been matched and game ends
+                document.getElementById("myAudio3").play();                 
                 $("#gameEnd").show();
                 $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
             }            
             else{
-                // Not all cards have been matched                                    
+                // Not all cards have been matched
+                document.getElementById("myAudio2").play();                                    
                 $("."+ array[0]).off("click");               
                 click = 0;          
                 checkArray = [];         
@@ -123,6 +125,7 @@ $(document).ready(function(){
         else if(array[0]!==array[1]){
             // Cards chosen are not the same
             totalTurns += 1;
+            document.getElementById("myAudio4").play();
             $("#turns").html("<h1>" + totalTurns + "</h1>");                          
             // Return the card class and hide character class     
             setTimeout(function(){                                   
