@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Match</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- header section -->
     <header>
-        <div class="logo"></div>
-        <p>Slogan</p>
-        <button id="start"></button>
+        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo image"></a></div>
+        <h2>May the force be with you....</h2>
+        <button id="start" class="button">click here to play</button>
     </header>
     <!-- Game section -->
     <section class="game">
@@ -51,7 +52,7 @@
                 <div class="row no-gutters">
                     <div class="col-3"><div class="card"></div>
                     </div>
-                    <div class="col-3"><div iclass="card"></div>
+                    <div class="col-3"><div class="card"></div>
                     </div>
                     <div class="col-3"><div class="card"></div>
                     </div>
@@ -63,13 +64,15 @@
         <!--Counter-->
         <div id="turns"></div>
         <!--Button section-->
-        <div>
-            <button id="reset"></button>
-            <button id="sound"></button>
-        </div>
-    <div>
-        <a>Character facts</a>
-    </div>  
+        <div class="controls">
+            <div>
+                <button id="reset" class="button">reset</button>
+                <button id="sound" class="button">sound</button>
+            </div>
+            <div>
+                <a href="#" class="button">Character facts</a>
+            </div>
+        </div>  
     </section>
     <!-- Footer section -->   
     <footer>
