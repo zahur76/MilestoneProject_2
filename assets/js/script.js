@@ -71,9 +71,9 @@ $(document).ready(function(){
         characterClass();
         $(".card").click(function(){
             // Allow cards to be clicked under certain conditions
-            if(click<=1){
+            if(click<=1 &&(($(this).attr("class")).length)>=6){
                 click += 1;
-                // Remove card class then add then add remaining class to an Array for comparison            
+                // Remove card class then add remaining class to an Array for comparison            
                 $(this).removeClass("card");
                 console.log($(this).removeClass("card"));                     
                 checkArray.push($(this).attr("class"));                
