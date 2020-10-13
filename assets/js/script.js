@@ -7,6 +7,9 @@ $(document).ready(function(){
     let totalTurns = 0;
     let totalMatch = 0;
     
+    // initilise home page
+    gameStart()
+
     // Restart button to initialise all variables
     $("#reset").click(function(){                
         $("#turns").html("<h1>" + "0" + "</h1>");        
@@ -48,6 +51,10 @@ $(document).ready(function(){
     
     // function to show level select modal
     $("#start").one("click", function(){
+        $("#reset").show("slow");
+        $(".grid").show(1000); 
+        $(".score").show("slow");
+        $("#sound").show("slow");  
         document.getElementById("myAudio1").play();
         $("#levelSelect").show();
     })
@@ -86,6 +93,19 @@ $(document).ready(function(){
             $("#myAudio4").attr("src","assets/sound/sure.mp3");
         }
     });
+
+    // Initial display settings for Home page
+    function gameStart(){
+        $(".grid").hide();
+        $("#reset").hide();
+        $(".score").hide();
+        $("#sound").hide();
+
+        for(let i=0; i<=4; i++){
+            $("#start").fadeOut(500);
+            $("#start").fadeIn(200);
+        }
+    }
 
     // Defines characterArray depending on level selected
     function gameArray(level){        
@@ -132,6 +152,7 @@ $(document).ready(function(){
                 // All cards have been matched and game ends
                 document.getElementById("myAudio3").play();                 
                 $("#gameEnd").show();
+                $()
                 $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
             }            
             else{
