@@ -267,10 +267,18 @@ input {
 }
 
 /* Footer section */
-
-.footer{    
+.footer{      
+    line-height: 60px;
+    font-size: 35px;
     height: 60px;
-    background-color: rgba(105,102,102,0.5);         
+    background-color: rgba(105,102,102,0.5);
+    text-align: center;       
+}
+
+.footer i{     
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
 }
 
 /* @media screen section */
