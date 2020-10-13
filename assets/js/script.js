@@ -2,6 +2,9 @@ $(document).ready(function(){
 
     // Global Variables
     let newArray = [];
+    let click = 0;
+    let checkArray = []; 
+    
     // function to show level select modal
     $("#start").one("click", function(){
         $("#levelSelect").show();
@@ -13,8 +16,7 @@ $(document).ready(function(){
         if($("input[type=radio][name=level]:checked").length===1){
             $("#levelSelect").hide();
             $("#start").html("<h5>"+"Match the cards!"+"</h5>");          
-            game();
-            smooth();
+            game();            
         }
         else{
             for(let i=0; i<=5; i++){
@@ -66,6 +68,20 @@ $(document).ready(function(){
         // Shuffle character array 
         newArray = shuffleArray(characterArray);
         // Assign shuffled array's character to a specific div               
-        characterClass();             
+        characterClass();
+        $(".card").click(function(){
+            // Allow cards to be clicked under certain conditions
+            if(click<=1){
+                click += 1;
+                // Remove card class then add then add remaining class to an Array for comparison            
+                $(this).removeClass("card");
+                console.log($(this).removeClass("card"));                     
+                checkArray.push($(this).attr("class"));                
+                if (click===2){
+                // Run check to see if the cards match 
+                matchCheck(checkArray);           
+                }
+            }
+        });             
     }
 })
