@@ -26,7 +26,7 @@ $(document).ready(function(){
         $(".hard").show();                       
     });
 
-    // Replay button to initialise all variables
+    // Replay button on Game end modal to initialise all variables
     $("#reset2").click(function(){                
         $("#turns").html("<h1>" + "0" + "</h1>");        
         let i;
@@ -65,7 +65,27 @@ $(document).ready(function(){
                 $(".choose").fadeIn(300);
             }           
         }      
-    });    
+    });
+    
+    //Sound on/off button control function
+    let sound = true;   
+    $("#sound").click(function(){
+        console.log(sound)
+        if(sound===true){    
+            sound= false;            
+            $("#sound i").removeClass("fa-volume-up").addClass("fa-volume-mute");
+            for (let i=2; i<=4; i++){
+                 $("#myAudio" + i).attr("src","assets/sound/silence.mp3");
+            }                      
+        }
+        else{
+            sound= true;            
+            $("#sound i").removeClass("fa-volume-mute").addClass("fa-volume-up");
+            $("#myAudio2").attr("src","assets/sound/force-strong.mp3");
+            $("#myAudio3").attr("src","assets/sound/most-impressive.mp3");
+            $("#myAudio4").attr("src","assets/sound/sure.mp3");
+        }
+    });
 
     // Defines characterArray depending on level selected
     function gameArray(level){        
