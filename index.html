@@ -18,7 +18,7 @@
     <section class="game">
         <!-- Card Grid system -->
         <div class="row no-gutters justify-content-center mt-3">
-            <div class="col-10 col-md-8 col-lg-5">
+            <div class="grid col-10 col-md-8 col-lg-5">
                 <div class="row no-gutters">
                     <div class="col-3"><div id="char_1" class="card"></div>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="col-3"><div id="char_8" class="card"></div>
                     </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters medium">
                     <div class="col-3"><div id="char_9" class="card"></div>
                     </div>
                     <div class="col-3"><div id="char_10" class="card"></div>
@@ -49,7 +49,7 @@
                     <div class="col-3"><div id="char_12" class="card"></div>
                     </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters hard">
                     <div class="col-3"><div id="char_13" class="card"></div>
                     </div>
                     <div class="col-3"><div id="char_14" class="card"></div>
@@ -84,16 +84,31 @@
     <!-- audio section-->
     <!-- Modal section-->
     <div id="levelSelect" class="modal">        
-        <div class="modal-content mt-3"> 
-                <h5 class="mt-3 choose">Choose your difficulty level</h5>                  
-                <input type="radio" id="easy" name="level" value="easy">
-                <label for="easy">easy</label>
-                <input type="radio" id="medium" name="level" value="medium">
-                <label for="medium">medium</label>
-                <input type="radio" id="hard" name="level" value="hard">
-                <label for="hard">hard</label>                
-        </div>
-        <button id="level" class="button mt-5 mb-3">Play</button><br>           
+        <div class="modal-content mt-2"> 
+            <h5 class="mt-2 choose">Choose your difficulty level</h5>                  
+            <input type="radio" id="easy" name="level" value="easy">
+            <label for="easy">easy</label>
+            <input type="radio" id="medium" name="level" value="medium">
+            <label for="medium">medium</label>
+            <input type="radio" id="hard" name="level" value="hard">
+            <label for="hard">hard</label>                
+        </div>        
+        <button id="level" class="button mt-5 mb-3">Play</button>          
+    </div>
+    <div id="gameEnd" class="modal">
+        <div class="modal-content mt-2">    
+            <p id="finish"></p>                         
+            <div class="choose">
+                <h5>Fun character Facts!</h5>
+            </div>
+            <div class="fun-facts mb-3 mt-2">    
+                <div id="data1">name</div>
+                <div id="data2">height</div>
+                <div id="data3">weight</div>
+                <div id="data4">hair colour</div>
+            </div>
+            <button id="reset2" class="button">Play Again</button> 
+        </div>  
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>      
