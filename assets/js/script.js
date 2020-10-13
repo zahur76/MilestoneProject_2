@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-
+    let newArray = [];
     // function to show level select modal
     $("#start").click(function(){
         $("#levelSelect").show();
@@ -29,10 +29,23 @@ $(document).ready(function(){
         }         
     }
 
+    // Shuffles Array 
+    function shuffleArray(array){
+        let len = array.length;
+        for(let i=0; i<=len-1; i++){
+        let rand = Math.floor((Math.random() * (array.length-1)) + 0);  
+        newArray.push(array[rand]);
+        array.splice(rand,1);        
+        }
+        return newArray;
+    }   
+
     function game(){
+        
         let level = $("input[type=radio][name=level]:checked").val();              
         gameArray(level);
-        
+        newArray = shuffleArray(characterArray); 
+        console.log(newArray)       
     }
 
 })

@@ -31,13 +31,13 @@ header{
 }
 
 /* Card section */
-/*.card{
+.card{
     border: 2px solid rgb(226, 5, 5);
     height: 125px;
     background: rgb(105, 102, 102);
     margin: 5px;
     border-radius: 10px;
-}*/
+}
 
 .ackbar{
     border: 2px solid rgb(226, 5, 5);
