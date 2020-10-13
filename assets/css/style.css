@@ -7,9 +7,21 @@
 }
 
 /* text styling */
+h2{    
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 400;
+    color: rgba(67, 165, 207, 0.6);
+    background:rgba(0,0,0,0.6);
+}
+
 /* Body styling */
 body{
     background-image: url("../images/space.jpg");
+}
+
+/* header section*/
+header{
+    text-align: center;
 }
 
 /* Card section */
@@ -29,7 +41,11 @@ body{
     border-radius: 5px;
     background:rgba(0,0,0,1); 
     min-width: 80px;
-    margin: 5px;
+    margin: 5px;    
+}
+
+.controls{
+    text-align: center;
 }
 
 /* modal section */
