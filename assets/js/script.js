@@ -3,7 +3,9 @@ $(document).ready(function(){
     // Global Variables
     let newArray = [];
     let click = 0;
-    let checkArray = []; 
+    let checkArray = [];
+    let totalTurns = 0;
+    let totalMatch = 0; 
     
     // function to show level select modal
     $("#start").one("click", function(){
@@ -58,6 +60,38 @@ $(document).ready(function(){
     function characterClass(){             
         for (let i=1; i<newArray.length+1; i++){
             $("#char_" + i).addClass(newArray[i-1]);                       
+        }
+    }
+
+    // Checks for card match 
+    function matchCheck(array){        
+        if (array[0]===array[1]){
+            totalTurns += 1;
+            $("#turns").html("<h1>" + totalTurns + "</h1>");                       
+            totalMatch += 1;            
+            if(totalMatch===(newArray.length)/2){
+                // All cards have been matched and game ends                 
+                $("#gameEnd").show();
+                $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
+            }            
+            else{
+                // Not all cards have been matched                                    
+                $("."+ array[0]).off("click");               
+                click = 0;          
+                checkArray = [];         
+            } 
+        }        
+        else if(array[0]!==array[1]){
+            // Cards chosen are not the same
+            totalTurns += 1;
+            $("#turns").html("<h1>" + totalTurns + "</h1>");                          
+            // Return the card class and hide character class     
+            setTimeout(function(){                                   
+            $("."+ array[0]).addClass("card");
+            $("."+ array[1]).addClass("card");           
+            checkArray = []; 
+            click = 0;                                
+            }, 2000);                        
         }
     }
 
