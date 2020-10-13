@@ -5,7 +5,46 @@ $(document).ready(function(){
     let click = 0;
     let checkArray = [];
     let totalTurns = 0;
-    let totalMatch = 0; 
+    let totalMatch = 0;
+    
+    // Restart button to initialise all variables
+    $("#reset").click(function(){                
+        $("#turns").html("<h1>" + "0" + "</h1>");        
+        let i;
+        // Resets all classes
+        for(i=1;i<=16;i++){
+            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card");
+        }
+        totalMatch = 0;
+        totalTurns = 0;
+        click = 0;
+        checkArray = [];
+        characterArray = [];
+        newArray = [];
+        $("#levelSelect").show();
+        $(".medium").show();
+        $(".hard").show();                       
+    });
+
+    // Replay button to initialise all variables
+    $("#reset2").click(function(){                
+        $("#turns").html("<h1>" + "0" + "</h1>");        
+        let i;
+        // Resets all classes
+        for(i=1;i<=16;i++){
+            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card");
+        }
+        totalMatch = 0;
+        totalTurns = 0;
+        click = 0;
+        checkArray = [];
+        characterArray = [];
+        newArray = [];
+        $("#levelSelect").show();
+        $("#gameEnd").hide();
+        $(".medium").show();
+        $(".hard").show();                       
+    });
     
     // function to show level select modal
     $("#start").one("click", function(){
