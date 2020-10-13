@@ -3,15 +3,26 @@ $(document).ready(function(){
     // Global Variables
     let newArray = [];
     // function to show level select modal
-    $("#start").click(function(){
+    $("#start").one("click", function(){
         $("#levelSelect").show();
     })
 
     // function to remove level select modal
+    // Removes level select Modal and starts game    
     $("#level").click(function(){
-        $("#levelSelect").hide()
-        game()
-    })    
+        if($("input[type=radio][name=level]:checked").length===1){
+            $("#levelSelect").hide();
+            $("#start").html("<h5>"+"Match the cards!"+"</h5>");          
+            game();
+            smooth();
+        }
+        else{
+            for(let i=0; i<=5; i++){
+                $(".choose").fadeOut(300);
+                $(".choose").fadeIn(300);
+            }           
+        }      
+    });    
 
     // Defines characterArray depending on level selected
     function gameArray(level){        

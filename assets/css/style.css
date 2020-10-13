@@ -18,6 +18,10 @@ h2{
     background:rgba(0,0,0,0.6);
 }
 
+h5{
+    letter-spacing: 1px;
+    padding: 2px;    
+}
 
 
 /* Body styling */
