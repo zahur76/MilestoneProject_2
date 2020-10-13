@@ -66,6 +66,11 @@ header{
     margin: 5px;    
 }
 
+.button:hover{
+    background: rgb(68, 66, 66);
+    text-decoration: none;
+}
+
 .controls, .facts{
     text-align: center;
 }
