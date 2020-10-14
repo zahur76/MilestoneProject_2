@@ -8,7 +8,7 @@ $(document).ready(function(){
     let totalMatch = 0;
     
     // initilise home page
-    gameStart()
+    gameStart();
 
     // Restart button to initialise all variables
     $("#reset").click(function(){                
@@ -65,7 +65,7 @@ $(document).ready(function(){
         $(".fa-galactic-senate").hide();          
         document.getElementById("myAudio1").play();
         $("#levelSelect").show();
-    })
+    });
 
     // Removes level select Modal and starts game    
     $("#level").click(function(){
@@ -84,8 +84,7 @@ $(document).ready(function(){
     
     //Sound on/off button control function
     let sound = true;   
-    $("#sound").click(function(){
-        console.log(sound)
+    $("#sound").click(function(){        
         if(sound===true){    
             sound= false;            
             $("#sound i").removeClass("fa-volume-up").addClass("fa-volume-mute");
@@ -158,8 +157,7 @@ $(document).ready(function(){
             totalMatch += 1;            
             if(totalMatch===(newArray.length)/2){
                 // All cards have been matched and game ends
-                document.getElementById("myAudio3").play();
-                console.log(funFacts())
+                document.getElementById("myAudio3").play();                
                 funFacts();                
                 $("#gameEnd").show();
                 $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
@@ -240,4 +238,4 @@ $(document).ready(function(){
             $("#data4").html("Hair-colour: " + data.hair_color);            
         });
     }  
-})
+});

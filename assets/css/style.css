@@ -260,7 +260,7 @@ header{
     color: white;  
     display: inline;       
     background: transparent;
-    letter-spacing: px;
+    letter-spacing: 1px;
 }
 
 #easy{
