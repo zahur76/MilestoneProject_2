@@ -237,6 +237,11 @@ header{
     text-align: center;
 }
 
+.fa-galactic-senate{
+    color: red;
+    font-size: 300px;    
+}
+
 /* modal section */
 .modal{ 
     border: 3px solid red; 
@@ -299,5 +304,8 @@ input {
     }
     .score h1{
         line-height: 75px;
+    }
+    .fa-galactic-senate{   
+    font-size: 200px;    
     }    
 }
