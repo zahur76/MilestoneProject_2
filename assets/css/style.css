@@ -327,5 +327,8 @@ input {
     } 
     .logo img{
         width: 200px;
-    }     
+    } 
+    .modal{
+        top: 225px;
+    }    
 }
