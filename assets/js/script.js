@@ -24,6 +24,7 @@ $(document).ready(function(){
         checkArray = [];
         characterArray = [];
         newArray = [];
+        scroll();
         $("#gameEnd").hide();
         $("#levelSelect").show();
         $(".medium").show();
@@ -47,6 +48,7 @@ $(document).ready(function(){
         checkArray = [];
         characterArray = [];
         newArray = [];
+        scroll();
         $("#levelSelect").show();
         $("#gameEnd").hide();
         $(".medium").show();
@@ -70,6 +72,7 @@ $(document).ready(function(){
     // Removes level select Modal and starts game    
     $("#level").click(function(){
         if($("input[type=radio][name=level]:checked").length===1){
+            scroll();
             $("#levelSelect").hide();
             $("#start").html("<h5>"+"Match the cards!"+"</h5>");          
             game();            
@@ -100,6 +103,15 @@ $(document).ready(function(){
             $("#myAudio4").attr("src","assets/sound/sure.mp3");
         }
     });
+
+    // Scroll screen to specific view point
+    function scroll(){
+        window.scrollTo({
+            top:200,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
 
     // Initial display settings for Home page
     function gameStart(){
