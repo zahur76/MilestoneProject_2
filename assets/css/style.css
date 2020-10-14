@@ -109,6 +109,15 @@ header{
 
 .home{
     text-align: center;
+    font-size: 40px;
+}
+
+.fa-home{
+    color: red;
+}
+
+.fa-home:hover{
+    color: rgb(68, 66, 66); 
 }
 
 .fa-galactic-senate{
@@ -150,7 +159,7 @@ input {
 }
 
 .fun-facts{
-    margin-left: 50px;    
+    margin-left: 40px;    
     text-align: left;
 }
 
@@ -218,6 +227,6 @@ input {
         top: 225px;
     }
     #character-info{
-    width: 300px; 
+    width: 315px; 
     }       
 }
