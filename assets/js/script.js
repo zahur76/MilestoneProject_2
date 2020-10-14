@@ -24,6 +24,7 @@ $(document).ready(function(){
         checkArray = [];
         characterArray = [];
         newArray = [];
+        $("#gameEnd").hide();
         $("#levelSelect").show();
         $(".medium").show();
         $(".hard").show();                       
@@ -54,7 +55,8 @@ $(document).ready(function(){
         $("#reset").show("slow");
         $(".grid").show(1000); 
         $(".score").show("slow");
-        $("#sound").show("slow");  
+        $("#sound").show("slow");
+        $(".fa-galactic-senate").hide();          
         document.getElementById("myAudio1").play();
         $("#levelSelect").show();
     })
@@ -152,7 +154,6 @@ $(document).ready(function(){
                 // All cards have been matched and game ends
                 document.getElementById("myAudio3").play();                 
                 $("#gameEnd").show();
-                $()
                 $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
             }            
             else{
