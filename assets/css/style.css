@@ -216,5 +216,8 @@ input {
     } 
     .modal{
         top: 225px;
-    }    
+    }
+    #character-info{
+    width: 300px; 
+    }       
 }
