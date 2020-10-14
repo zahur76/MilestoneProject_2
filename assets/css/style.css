@@ -276,6 +276,11 @@ input {
     font-size: 40px;
 }
 
+.fun-facts{
+    margin-left: 50px;    
+    text-align: left;
+}
+
 /* Footer section */
 .footer{      
     line-height: 60px;
