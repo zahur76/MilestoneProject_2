@@ -29,7 +29,7 @@ h5{
     color: red;       
     text-align: center;
     margin: 5px;
-    font-size: 20px;       
+    font-size: 18px;       
 }
 
 
@@ -248,14 +248,14 @@ header{
 /* modal section */
 .modal{ 
     border: 3px solid red; 
-    height: 310px;
+    height: 280px;
     border-radius: 10px;
     background-color:rgba(0,0,0,0.9);  
     width: 350px;
     margin: 0 auto;  
     position: absolute;
     top: 275px;
-    text-align: center;   
+    text-align: center;       
 }
 
 .modal-content{
@@ -327,5 +327,5 @@ input {
     } 
     .logo img{
         width: 200px;
-    }   
+    }     
 }
