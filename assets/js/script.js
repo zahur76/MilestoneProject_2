@@ -217,7 +217,14 @@ $(document).ready(function(){
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200){
                 cb(JSON.parse(this.responseText));                
-            }                       
+            }
+            // Code executed if status is not 200
+            else if (this.readyState == 4 && this.status != 200){                
+                $("#data1").html("Name: Luke Skywalker" );
+                $("#data2").html("Height: 172");
+                $("#data3").html("Mass: 77 ");
+                $("#data4").html("Hair-colour: blond");
+            }                                     
         };
         xhr.open("GET", url);
         xhr.send();
