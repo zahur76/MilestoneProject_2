@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Match</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo m"><a href="index.html"><img src="assets/images/logo.png" alt="logo image"></a></div>
+        <h2>May the force be with you....</h2>        
+    </header>
+    <!-- Game section -->
+    <section class="game">
+        <!-- Card Grid system -->
+        <div class="row no-gutters justify-content-center mt-3">
+            <div class="grid col-10 col-md-8 col-lg-5">
+                <div class="row no-gutters">
+                    <div class="col-3"><div id="char_1" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_2" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_3" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_4" class="card"></div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-3"><div id="char_5" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_6" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_7" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_8" class="card"></div>
+                    </div>
+                </div>
+                <div class="row no-gutters medium">
+                    <div class="col-3"><div id="char_9" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_10" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_11" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_12" class="card"></div>
+                    </div>
+                </div>
+                <div class="row no-gutters hard">
+                    <div class="col-3"><div id="char_13" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_14" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_15" class="card"></div>
+                    </div>
+                    <div class="col-3"><div id="char_16" class="card"></div>
+                    </div>
+                </div>              
+            </div>               
+        </div>
+        <!--Counter-->
+        <div class="row mt-3 justify-content-center no-gutters">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-1 score">
+                <div id="turns"><h1>0</h1></div>
+            </div>            
+        </div>
+        <!--Link section-->        
+        <div class="home mt-3">
+            <a href="index.html" class="button">Home</a>
+        </div>         
+    </section>
+    <!-- Footer section -->   
+     <footer class="footer mt-5">
+        <a href="https://www.facebook.com/StarWars/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/starwars" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/starwars/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+    </footer>
+    <!-- audio section-->
+    <audio id="myAudio1"><source src="assets/sound/lightsaber.mp3" type="audio/mpeg"></audio>
+    <audio id="myAudio2"><source src="assets/sound/force-strong.mp3" type="audio/mpeg"></audio> 
+    <audio id="myAudio3"><source src="assets/sound/most-impressive.mp3" type="audio/mpeg"></audio>
+    <audio id="myAudio4"><source src="assets/sound/sure.mp3" type="audio/mpeg"></audio>
+    <!-- Modal section-->    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>       
+</body>
+</html>
