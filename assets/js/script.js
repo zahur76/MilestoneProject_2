@@ -152,7 +152,9 @@ $(document).ready(function(){
             totalMatch += 1;            
             if(totalMatch===(newArray.length)/2){
                 // All cards have been matched and game ends
-                document.getElementById("myAudio3").play();                 
+                document.getElementById("myAudio3").play();
+                console.log(funFacts())
+                funFacts();                
                 $("#gameEnd").show();
                 $("#finish").html("You took " + totalTurns + " turns to complete!");                                              
             }            
@@ -202,4 +204,27 @@ $(document).ready(function(){
             }
         });             
     }
+
+    // Starwars API character select 
+    function getData(url, cb) {
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200){
+                cb(JSON.parse(this.responseText));                
+            }                       
+        };
+        xhr.open("GET", url);
+        xhr.send();
+    }
+
+    //Sends API data to HTML div
+    function funFacts(){                   
+        let randomNum = Math.floor(Math.random() * 80);
+        getData("https://ci-swapi.herokuapp.com/api/people/"+randomNum+"/", function(data){            
+            $("#data1").html("Name: " + data.name);
+            $("#data2").html("Height: " + data.height);
+            $("#data3").html("Mass: " + data.mass);
+            $("#data4").html("Hair-colour: " + data.hair_color);            
+        });
+    }  
 })
