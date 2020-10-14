@@ -223,7 +223,7 @@ header{
     font-size: 20px;
     color: rgb(235, 20, 20);
     border-radius: 5px;
-    background:rgba(0,0,0,1); 
+    background:rgb(0,0,0); 
     min-width: 80px;
     margin: 5px;    
 }
@@ -267,8 +267,12 @@ header{
 }
 
 input {
-    margin-left: 35px;
-        
+    margin-left: 35px;        
+}
+
+.fa-jedi{
+    color: white;
+    font-size: 40px;
 }
 
 /* Footer section */
