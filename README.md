@@ -1,1 +1,26 @@
-My game
+# **STAR MATCH**
+
+## TABLE OF CONTENT 
+* [Introduction](#introduction)
+    * [Grid sytem](#grid-system)
+    * [Control buttons](#control-buttons)
+    * [Counter](#counter)
+    * [Footer](#footer)
+* [UX](#ux)
+    * [UX design philosophy](#ux-design-philosophy)
+* [Development cycle](#development-cycle)
+* [Features](#features)
+* [Technologies used](#technologies-used)
+* [Javascript game logic](#javascript-game-logic)
+* [Testing](#testing)
+    * [UX testing](#ux-testing)
+    * [validators](#validators)
+    * [Chrome DevTools](#chrome-devtools)
+    * [Jasmine unit testing](#jasmine-unit-testing)
+    * [Game testing](#game-testing)
+    * [Responsive design](#responsive-design)
+    * [Manual tests performed](#manual-tests-performed)
+    * [Issues encountered during development testing](#issues-encountered-during-development)
+* [Deployment](#deployment)
+* [Future improvments](#future-improvements)
+* [Credits](#credits)
