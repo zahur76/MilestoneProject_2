@@ -174,7 +174,7 @@ input {
 #character-info{
     height: 400px;
     position: absolute;
-    top: 150px;
+    top: 200px;
     background-color:rgba(0, 0, 0, 0.9); 
 }
 
@@ -227,6 +227,15 @@ input {
         top: 225px;
     }
     #character-info{
-    width: 315px; 
+    width: 315px;
+    top: 150px; 
+    }
+
+    .fun-facts{
+        margin-left: 30px;
+    }
+
+    .fun-facts div{
+        font-size: 14px;
     }       
 }
