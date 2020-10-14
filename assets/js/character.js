@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-    $(".char").one("click",function(){
+    $(".char").click(function(){
         // Remove previous character info
         for(let i=1; i<=6; i++){
             $("#data"+i).html("");
         }          
         $("#character-info").show();
-        funFacts($(this).attr("id"))
+        funFacts($(this).attr("id"));
     })
 
     $("#reset").click(function(){
@@ -22,12 +22,12 @@ $(document).ready(function(){
             }
             // Code executed if status is not 200
             else if (this.readyState == 4 && this.status != 200){                
-                $("#data1").html("Name: Luke Skywalker" );
-                $("#data2").html("Height: 172");
-                $("#data3").html("Mass: 77 ");
-                $("#data4").html("Hair-colour: blond");
-                $("#data5").html("Mass: 77 ");
-                $("#data6").html("Hair-colour: blond");
+                $("#data1").html("Name: Data unavailable" );
+                $("#data2").html("Height: Data unavailable");
+                $("#data3").html("Mass: Data unavailable");
+                $("#data4").html("Hair-colour: Data unavailable");
+                $("#data5").html("Eye colour: Data unavailable");
+                $("#data6").html("Birth year: Data unavailable");
             }                                     
         };
         xhr.open("GET", url);
