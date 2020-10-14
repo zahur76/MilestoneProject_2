@@ -16,7 +16,7 @@ $(document).ready(function(){
         let i;
         // Resets all classes
         for(i=1;i<=16;i++){
-            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card");
+            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card").removeAttr("style");;
         }
         totalMatch = 0;
         totalTurns = 0;
@@ -40,7 +40,7 @@ $(document).ready(function(){
         let i;
         // Resets all classes
         for(i=1;i<=16;i++){
-            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card");
+            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card").removeAttr("style");
         }
         totalMatch = 0;
         totalTurns = 0;
@@ -189,8 +189,8 @@ $(document).ready(function(){
             $("#turns").html("<h1>" + totalTurns + "</h1>");                          
             // Return the card class and hide character class     
             setTimeout(function(){                                   
-            $("."+ array[0]).addClass("card");
-            $("."+ array[1]).addClass("card");           
+            $("."+ array[0]).addClass("card").removeAttr("style");;
+            $("."+ array[1]).addClass("card").removeAttr("style");;           
             checkArray = []; 
             click = 0;                                
             }, 2000);                        
@@ -211,7 +211,9 @@ $(document).ready(function(){
                 click += 1;
                 // Remove card class then add remaining class to an Array for comparison            
                 $(this).removeClass("card");
-                console.log($(this).removeClass("card"));                     
+                // Insert image to card              
+                let remainingClass = $(this).attr("class");
+                $(this).css("background-image", "url('assets/images/"+remainingClass+".png')");                                  
                 checkArray.push($(this).attr("class"));                
                 if (click===2){
                 // Run check to see if the cards match 
