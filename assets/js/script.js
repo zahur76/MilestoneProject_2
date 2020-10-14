@@ -27,7 +27,10 @@ $(document).ready(function(){
         $("#gameEnd").hide();
         $("#levelSelect").show();
         $(".medium").show();
-        $(".hard").show();                       
+        $(".hard").show();
+        for(let i=1; i<=4; i++){
+            $("#data"+i).html("");
+        }                        
     });
 
     // Replay button on Game end modal to initialise all variables
@@ -47,7 +50,10 @@ $(document).ready(function(){
         $("#levelSelect").show();
         $("#gameEnd").hide();
         $(".medium").show();
-        $(".hard").show();                       
+        $(".hard").show();
+        for(let i=1; i<=4; i++){
+            $("#data"+i).html("");
+        }                        
     });
     
     // function to show level select modal
