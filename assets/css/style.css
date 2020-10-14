@@ -246,7 +246,7 @@ header{
 /* modal section */
 .modal{ 
     border: 3px solid red; 
-    height: 270px;
+    height: 310px;
     border-radius: 10px;
     background-color:rgba(0,0,0,0.9);  
     width: 350px;
@@ -273,7 +273,7 @@ input {
 
 .fa-jedi{
     color: white;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .fun-facts{
