@@ -32,7 +32,7 @@
 
 This project is a Star Wars themed memory match game. The game was constructed with the intention of being a brain training tool 
 to primarily strengthen memory. Instead of making a straight forward memory match game a Star wars theme was incorporated.
-Such as design would improve the overall training experience and make it more enjoyable.
+Such a design would improve the overall user experience.
 
 This game also has the added benefit of being able to change difficulty levels with the intention of adding catering for different
 user requirements. 
@@ -57,7 +57,23 @@ through the initial game selection by being exposed to information required only
 For example the grid system and control buttons would only appear once the "click to start' button had been clicked on. This was 
 done with intention of improving UX. Modals were also used included as this was thought to be more intuitive for the user
 and would prevent information overload. 
-The character info section was include on a seperate page so as not to distract the user from the main game.
+The character info section was included on a seperate page so as not to distract the user from the main game.
+
+At design stage a initial colour scheme diagram was produced so as to suit the Star wars theme as shown below.
+
+![Image of cards](assets/doc/mockup.png)
+
+The Star wars themed design was achieved by using a logo and blue text similar to what is seen at the beginning of Star wars films. 
+This was further enhanced by the use of a 'space' background image. 
+
+All buttons were designed to be identical with grey border, red text and black background.  This was thought to fit into 
+the Star wars sci-fy theme and would be easily identifiable as buttons. The cards were given a grey colour (rgb(105, 102, 102)) to provide good contrast to 
+the background. 
+
+The actually character cards were chosen to be of cartoon nature since this was thought to be more suited 
+for a memory match game. Most importantly the character images were chosen so as to be as visually different as possible from each other
+to prevent confusion while playing since this formed the main part of the game. 
+
 
 ## DEVELOPMENT CYCLE
 
@@ -79,14 +95,15 @@ faster since the main game code logic had already been designed. The development
 12. Perform Jasmine unit testing on functions 
 13. Add audio files and add sound on/off functions
 14. Add Star wars API
-15. Code reviewed for possible improvements 
+15. Mid project review for possible improvements 
 16. Validators used to check for errors
 17. Any issues from step 15 and 16 were addressed
 18. Game given to relatives and friends for testing
 19. Character.html page created
 20. Design functions for character.html page
-21. Add 404.html page
-22. Final testing 
+21. Add star wars API to character selection
+22. Add 404.html page
+23. Final testing 
 
 The items were coded in the order that they would be selected while playing the game.
 The initial main game design was completed then a preliminary testing performed as detailed [below](#testing). 
@@ -304,7 +321,7 @@ The following gives test results for button and link testing.
   
 ### Bugs Encountered during development
 
-During testing phase the following main errors were indentified and corrected.
+During testing phase the following issues were indentified and corrected.
 
 1. Once a specific card was clicked it could be selected again causing the card game logic to breakdown. This was 
 resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in the click function.
@@ -335,6 +352,7 @@ This was adjusted by increasing modal height from 270px to 310px.
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained.
 
+8. A hover effect was introduced to improve card selection. 
 
 
 
