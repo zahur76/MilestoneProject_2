@@ -20,7 +20,7 @@
     * [Responsive design](#responsive-design)
     * [Button and link testing](#button-and-link-testing)
     * [Summary of test results](#summary-of-test-results)
-    * [Issues encountered during development testing](#issues-encountered-during-development)
+    * [Bugs encountered during development testing](#bugs-encountered-during-development)
 
 * [Deployment](#deployment)
 * [Future improvments](#future-improvements)
@@ -177,7 +177,7 @@ indicated below:
 The goals set out in the UX section were accomplished as follows:
 
 1. User goal: *play a game to improve my congnitive function*<br>
-Although difficult to measure, memory match games have been shown to be an effective brain training tool, especially
+Although difficult to measure, memory match games have scientifically been shown to be an effective brain training tool, especially
 improving:
 * concentration
 * shorterm memory
@@ -204,7 +204,7 @@ baseline for future game attempts.
 This was achieved by using Star Wars themed design which made the game more visually appealing.
 
 6. User goal: *be exposed to general Star Wars character facts so I can further my star wars knowledge*</br>
-This was achieved by consuming a Star Wars API provided by [Code Institute](https://ci-swapi.herokuapp.com). This would provide a random character
+This was achieved by consuming a Star Wars API provided by [swapi.dev](https://swapi.dev). This would provide a random character
 fact highlighting the characters name, height, weight, and hair-clour when the game finished. A second page
 was also included during delvelopment which allowed the user to click on specific Star wars characters to obtain facts.
 
@@ -244,7 +244,7 @@ Once the main game functions were completed Jasmine framework was used to ensure
 Tests were successful as detailed below. 
 The scriptSpec.js file is located in the spec folder.
 
-| Tests                          | Expected result                                     | Results  |                                 
+| Test                           | Expected result                                     | Results  |                                 
 |:-------------------------------|:----------------------------------------------------|:---------|
 |expect(gameArray).toBeDefined() |Should exist                                         |Passed    |
 |gameArray("easy")               |yoda","yoda","vader","vader","luke","luke","r2","r2" |Passed    |                            
@@ -284,23 +284,25 @@ A cross browser check was also done using the website parrotqa.com catering for 
 
 The following gives test results for button and link testing.
 
-### Summary of test results 
-
- The folowing provides results at project completion stage.
-
-| Tests               |Results                              |
-|---------------------|:------------------------------------|
-|Syntax errors        |Passed                               |
-|Debugging            |Passed                               |
-|Reponsive design     |Passed                               |
-|Unit testing         |Passed                               |
-|User game testing    |Passed                               |
-|Browser compatibility|Passed except for sound lag on safari|                                     
-|Button/link testing  |Passed                               |  
-
-
-
-### Issues Encountered during development
+|Page            | Action taken                           |Expected result                                          | Results |                                 
+|:---------------|----------------------------------------|:--------------------------------------------------------|:--------|
+|index.html      |click on "click here to play"           |Card grid system and level select modal to appear        |Passed   |
+|index.html      |click on "play" with no level selected  |"Choose you difficulty level" to flash                   |Passed   |                           
+|index.html      |click on "play" with level selected     |level modal game to disappear                            |Passed   |
+|index.html      |click on card                           |star wars character to appear                            |Passed   |
+|index.html      |click on restart button                 |level modal to appear                                    |Passed   |
+|index.html      |click on sound button                   |sound icon to change and audio to off                    |Passed   |
+|index.html      |click on facebook icon                  |Facebook star wars page to open up in new window         |Passed   |                     
+|index.html      |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
+|index.html      |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |  
+|character.html  |click on home button                    |Return back to index.html page                           |Passed   |
+|character.html  |click on card                           |character  modal to appear with image and facts          |Passed   |                           
+|character.html  |click on modal close button             |Character facts modal game to disappear                  |Passed   |
+|character.html  |click on facebook icon                  |Facebook star wars page to open up in new window         |Passed   |                     
+|character.html  |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
+|character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
+  
+### Bugs Encountered during development
 
 During testing phase the following main errors were indentified and corrected.
 
@@ -329,6 +331,9 @@ with Javacsript once the card was selected. This provided a more efficient style
 This was adjusted by increasing modal height from 270px to 310px.
 
 ![Image of unavailable data](assets/doc/error.png)
+
+7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
+was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained.
 
 
 
