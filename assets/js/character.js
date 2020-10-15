@@ -51,7 +51,7 @@ $(document).ready(function(){
         for(let i=1 ; i<=6; i++){
             $("#data" + i).prepend($('<img>',{id:'theImg',src:'assets/images/load.gif',alt:"loading bar"}));  
         }               
-        getData("https://ci-swapi.herokuapp.com/api/people/"+num+"/", function(data){            
+        getData("https://swapi.dev/api/people/"+num+"/", function(data){            
             $("#data1").html("Name: " + data.name);
             $("#data2").html("Height: " + data.height);
             $("#data3").html("Mass: " + data.mass);
