@@ -4,7 +4,12 @@ $(document).ready(function(){
         // Remove previous character info
         for(let i=1; i<=6; i++){
             $("#data"+i).html("");
-        }          
+        }
+        // Add image icon to modal
+        $(this).removeClass("char");
+        let image = $(this).attr("class");        
+        $(".myImage img").attr("src","assets/images/" + image +".png");
+        $(".myImage img").attr("alt", image);           
         $("#character-info").show();
         funFacts($(this).attr("id"));
     })
