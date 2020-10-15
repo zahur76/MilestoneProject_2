@@ -3,7 +3,7 @@
 ## TABLE OF CONTENT 
 * [Introduction](#introduction)    
 * [UX](#ux)
-    * [UX design philosophy](#ux-design-philosophy)
+    * [UX design work](#ux-design-work)
 * [Development cycle](#development-cycle)
 * [Features](#features)
     * [Grid sytem](#grid-system)
@@ -31,10 +31,10 @@
 ![Responsive image for game](assets/doc/responsive.png)
 
 This project is a Star Wars themed memory match game. The game was constructed with the intention of being a brain training tool 
-to primarily strengthen memory. Instead of making a straight forward memory match game a Star wars theme was incorporated.
-Such a design would improve the overall user experience.
+to primarily strengthen memory. To differentiate from other memory match games a Star wars theme was incorporated.
+Such a design would improve the overall user experience. 
 
-This game also has the added benefit of being able to change difficulty levels with the intention of adding catering for different
+This game also has the added benefit of being able to change difficulty levels with the intention of catering for different
 user requirements. 
 
 ## UX 
@@ -48,27 +48,36 @@ By visiting this site as a user I want to:
 * be exposed to general Star Wars character facts so I can further my Star wars knowledge.
 
 
-### UX design philosophy 
+### UX design work 
 
 A wireframe was constructed using balsamique wireframes. It can be found  [here](assets/doc/wireframe.pdf).
 
 The site was designed to be minimalist by changing page configuration upon user input. This would allow the user to easily navigate 
-through the initial game selection by being exposed to information required only at the time. 
-For example the grid system and control buttons would only appear once the "click to start' button had been clicked on. This was 
-done with intention of improving UX. Modals were also used included as this was thought to be more intuitive for the user
-and would prevent information overload. 
-The character info section was included on a seperate page so as not to distract the user from the main game.
+through the initial game selection by being exposed to information required only at that specific time. 
+For example, the level select modal would only appear once the "click to start' button had been clicked on which would be the next
+required user input. This was done with intention of improving UX. To achieve this design philosophy modals were inlcuded to provide information at the right time. 
+
+The character info section was included on a seperate page so as not to distract the user from the main game. It was included 
+as a secondary option for user to gain more knowledge about the characters in the main game. This would increase the overall
+site experience. 
+
+To further improve the UX the grid system was made to appear similar to the activation of a lightsaber. This effect was enhanced with 
+audio. 
 
 At design stage a initial colour scheme diagram was produced so as to suit the Star wars theme as shown below.
 
-![Image of cards](assets/doc/mockup.png)
+![Image of mockup](assets/doc/mockup.png)
 
 The Star wars themed design was achieved by using a logo and blue text similar to what is seen at the beginning of Star wars films. 
 This was further enhanced by the use of a 'space' background image. 
 
 All buttons were designed to be identical with grey border, red text and black background.  This was thought to fit into 
-the Star wars sci-fy theme and would be easily identifiable as buttons. The cards were given a grey colour (rgb(105, 102, 102)) to provide good contrast to 
-the background. 
+the Star wars sci-fy theme and would be easily identifiable. The control buttons were situated together for user ease. 
+
+The character facts link was placed at the bottom of the page since it was a secondary option and was not required to play the 
+main game. 
+
+The cards were given a grey colour (rgb(105, 102, 102)) to provide good contrast to the background. 
 
 The actually character cards were chosen to be of cartoon nature since this was thought to be more suited 
 for a memory match game. Most importantly the character images were chosen so as to be as visually different as possible from each other
@@ -79,57 +88,58 @@ to prevent confusion while playing since this formed the main part of the game.
 
 The game initially started out as an idea to develop my javascript skills. Once the prototype was completed, it's concept 
 was used as groundwork to develop this project. One of the advantages gained by doing this was the ability to code the game 
-faster since the main game code logic had already been designed. The development cycle was as follows:
+faster since the main game code logic had already been mapped out. The development cycle was as follows:
 
-1. Create [wireframe](assets/doc/wireframe.pdf)
-2. Create Index.html page
-3. Add preliminary styling to index.html page
-4. Add logo and slogan 
-5. Add footer
-6. Add responsive design using boostrap
-7. Create javascript file
-8. Create level select modal in html followed by the required functions in script.js
-9. Code functions required for main game logic (card selection, match check)
-10. Create game end modal in index.html followed by the required functions in script.js
-11. Code functions required for restart and replay buttons
-12. Perform Jasmine unit testing on functions 
-13. Add audio files and add sound on/off functions
-14. Add Star wars API
-15. Mid project review for possible improvements 
-16. Validators used to check for errors
-17. Any issues from step 15 and 16 were addressed
-18. Game given to relatives and friends for testing
-19. Character.html page created
-20. Design functions for character.html page
-21. Add star wars API to character selection
-22. Add 404.html page
-23. Final testing 
+1. [wireframe](assets/doc/wireframe.pdf) created
+2. Index.html page created
+3. Preliminary styling added to index.html page
+4. Logo and slogan added to index.html page 
+5. Footer added
+6. Responsive design included using boostrap
+7. Javascript file script.js created
+8. Level select modal added to index.html followed by coding of functions to show, hide modal and select levels in script.js
+9. Functions required for main game logic coded (card selection, match check)
+10. Game end modal contructed in index.html followed by the coding of functions to show, hide modal and play again
+12. Functions for reset and restart buttons were coded
+13. Perform Jasmine unit testing on functions to test for correct output 
+14. Audio files added and sound on/off functions coded
+15. Star wars API added
+16. Mid project review performed for possible improvements in design and coding
+17. Validators used to check for errors
+18. Any issues from step 16 and 17 were addressed
+19. Game given to relatives and friends for testing
+20. Character.html page created
+21. Functions for character.html page coded such character modal selection
+22. Star wars API included to character selection
+23. 404.html added page
+24. Final testing performed
 
-The items were coded in the order that they would be selected while playing the game.
-The initial main game design was completed then a preliminary testing performed as detailed [below](#testing). 
+The features were designed in the order that they would be selected while playing the game. For example the level select 
+feature modal was coded before the main game.
+Once the initial main game design was completed then a preliminary testing performed as detailed [below](#testing). 
 
 ## FEATURES
 
 The site consists of a two page design. The first page consists of the game which is made up of a logo, 
 card grid system, control buttons, counter and footer. Two modals have also been included and described below.
 
-![Image of cards](assets/doc/mainpage.png)
+![Image of main page](assets/doc/mainpage.png)
 
 The second page consists of card grid system which can be clicked to show character facts with a home button to return
 back to game. 
 
-![Image of cards](assets/doc/characterpage.png)
+![Image of character page](assets/doc/characterpage.png)
 
 ### Grid system
 
-![Image of cards](assets/doc/grid.png)
+![Image of card grid system](assets/doc/grid.png)
 
 The card grid system forms the main part of the site whereby the user can select a pair of cards for comparison.
 The design also includes a hover effect to assist the user is knowing which card will be selected.
 
 ### Control buttons and counter
 
-![Image of cards](assets/doc/control.png)
+![Image of control buttons](assets/doc/control.png)
 
 2 control buttons were included. The restart button permits the user to reset the game whilst the sound button
 removes/adds sound effects.
@@ -144,11 +154,11 @@ which would change the size of card grid system. The second modal activated when
 * Star Wars character fact obtained from https://swapi.dev API 
 * a button to play again.
 
-![Image of cards](assets/doc/level.png)
+![Image of modals](assets/doc/level.png)
 
 A modal was included for the character facts section to show info on the clicked character.
 
-![Image of cards](assets/doc/facts.png)
+![Image of character modal](assets/doc/facts.png)
 
 
 ### footer
@@ -271,8 +281,8 @@ The scriptSpec.js file is located in the spec folder.
 |expect(game).toBeDefined()      |Should exist"                                        |Passed    |
 |expect(click).toBe(0)           |should be equal to 0"                                |Passed    |
 
-![Image of cards](assets/doc/jasmine.png)
-![Image of cards](assets/doc/jasmine2.png)
+![Image of jasmiine testing](assets/doc/jasmine.png)
+![Image of jasmine testing](assets/doc/jasmine2.png)
 
 ### Game testing
 
@@ -350,9 +360,33 @@ This was adjusted by increasing modal height from 270px to 310px.
 ![Image of unavailable data](assets/doc/error.png)
 
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
-was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained.
+was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
 
 8. A hover effect was introduced to improve card selection. 
+
+## DEPLOYMENT
+
+Gitpod was used as an online IDE and then pushed to GITHUB for [hosting](https://zahur76.github.io/MilestoneProject_2/).
+
+To deploy the project on github pages the following steps were used:
+1. Login to Github and select the the MilestoneProject_2 repository.
+2. Press the setting button on the top menu bar located on the right-hand side.
+![image of github menu bar](assets/doc/github.png)
+3. Scroll down to the Github pages section and select Master branch from the dropdown menu and press save.
+![image of github pages section](assets/doc/githubpages.png)
+4. Once completed an active link is published for the repository. 
+
+To run code locally the following steps should be performed:
+1. On GitHub, navigate to the main page of the repository.
+2. Above the list of files, click  Code and copy URL.
+
+![image of github pages section](assets/doc/clone.png)
+
+3. Open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory.
+5. Type git clone, and then paste the URL you copied earlier.</br>
+    $ git clone https://github.com/zahur76/MilestoneProject_2
+6. Press Enter to create your local clone.
 
 
 
