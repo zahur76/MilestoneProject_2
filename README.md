@@ -225,7 +225,7 @@ Code syntax were checked for errors with the following validators:
 |:-------------------------------|:-----------------------------|:-------------------|
 |W3C validator                   |No errors found               |Passed              |
 |css official validator(jigsaw)  |No errors or warnings to show |Passed              |                            
-|JSHint located|                 |No warnings                   |Warnings present    |
+|JSHint located                  |No warnings                   |Warnings present    |
 
 The Jshint test warning " 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." was due to
 syntax used for defining variables.
@@ -241,8 +241,7 @@ Chrome DevTools were used extensively during development phase to assist in:
 ### Jasmine unit testing
 
 Once the main game functions were completed Jasmine framework was used to ensure functions were defined and output were correct. 
-Tests were successful as detailed below. Since jasmine framework would not work with  ```$(document).ready(function(){})``` present in the script.js, 
-the files were copied to a testScript.js file for testing. 
+Tests were successful as detailed below. 
 The scriptSpec.js file is located in the spec folder.
 
 | Tests                          | Expected result                                     | Results  |                                 
@@ -277,7 +276,7 @@ A final check was done using the website http://ami.responsivedesign.is/.
 ### Browser compatibility
 
 The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera by running the game on these browsers.
-A cross broswer check was also done using the website parrotqa.com catering for chrome, safari and FireFox.
+A cross browser check was also done using the website parrotqa.com catering for chrome, safari and FireFox.
 
 ![reponsive design Image](assets/doc/browser.png)
 
@@ -324,7 +323,13 @@ by hiding the 'gameEnd' module if the restart button is pressed.
 
 5. Each star wars character had its own character class which produced alot of repetition for only a change in image URL. To avoid having
 to repeat each character class, consuming large amount of css lines, a solution was found whereby the background-image URL was added 
-with Javacsript once the card was selected. This provided a more efficient style sheet. 
+with Javacsript once the card was selected. This provided a more efficient style sheet.
+
+6. Once the main game was completed and testing peform it was noticed that the play again button was hidden on the game end modal.
+This was adjusted by increasing modal height from 270px to 310px.
+
+![Image of unavailable data](assets/doc/error.png)
+
 
 
 
