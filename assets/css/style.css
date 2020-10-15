@@ -103,6 +103,10 @@ header{
     text-decoration: none;
 }
 
+#start{
+    margin-top: 100px;
+}
+
 .controls, .facts{
     text-align: center;
 }
