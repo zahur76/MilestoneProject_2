@@ -71,6 +71,10 @@ header{
     margin: 5px;
     border-radius: 10px;
 }
+
+.card:hover{
+    background: rgb(68,66,66);
+}
 /* counter */
 .score{
     border: 3px solid red;   
