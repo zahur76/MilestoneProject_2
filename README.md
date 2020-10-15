@@ -95,7 +95,7 @@ faster since the main game code logic had already been mapped out. The developme
 3. Preliminary styling added to index.html page
 4. Logo and slogan added to index.html page 
 5. Footer added
-6. Responsive design included using boostrap
+6. Responsive design incorporated using boostrap
 7. Javascript file script.js created
 8. Level select modal added to index.html followed by coding of functions to show, hide modal and select levels in script.js
 9. Functions required for main game logic coded (card selection, match check)
@@ -167,6 +167,21 @@ A footer was added which incoporated social links to:
 * official Star Wars facebook site
 * official Star Wars twitter site
 * official Star Wars Istagram site
+
+## TECHNOLOGIES USED
+
+* HTML5
+* css 
+* javacript (ES6)
+* Jquery to simplify DOM manipulation
+* official W3C validator to check HTML syntax
+* css official validator(jigsaw) to check css syntax
+* JSHint to check javacript syntax 
+* Jasmine testing framework for unit testing
+* Chrome developers tools for analysing scripts and debugging
+* Bootstrap 4 for page layout purposes and responsive design aspects
+* balsamiq wireframes application to create the site design
+* Chrome extension 'responsive viewer' to aid in reponsive design 
 
 ## JAVASCRIPT GAME LOGIC
 
@@ -303,7 +318,7 @@ A final check was done using the website http://ami.responsivedesign.is/.
 ### Browser compatibility
 
 The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera by running the game on these browsers.
-A cross browser check was also done using the website parrotqa.com catering for chrome, safari and FireFox.
+A cross browser check was also done using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
 
 ![reponsive design Image](assets/doc/browser.png)
 
@@ -357,7 +372,7 @@ with Javacsript once the card was selected. This provided a more efficient style
 6. Once the main game was completed and testing peform it was noticed that the play again button was hidden on the game end modal.
 This was adjusted by increasing modal height from 270px to 310px.
 
-![Image of unavailable data](assets/doc/error.png)
+![Image of play button](assets/doc/error.png)
 
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
