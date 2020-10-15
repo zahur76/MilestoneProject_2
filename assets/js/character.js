@@ -1,21 +1,27 @@
 $(document).ready(function(){
 
+    let click = 0;
+
     $(".char").click(function(){
-        // Remove previous character info
-        for(let i=1; i<=6; i++){
-            $("#data"+i).html("");
-        }
-        // Add image icon to modal
-        $(this).removeClass("char");
-        let image = $(this).attr("class");        
-        $(".myImage img").attr("src","assets/images/" + image +".png");
-        $(".myImage img").attr("alt", image);           
-        $("#character-info").show();
-        funFacts($(this).attr("id"));
-    })
+        if(click===0){
+            click += 1;
+            // Remove previous character info
+            for(let i=1; i<=6; i++){
+                $("#data"+i).html("");
+            }
+            // Add image icon to modal
+            $(this).removeClass("char");
+            let image = $(this).attr("class");        
+            $(".myImage img").attr("src","assets/images/" + image +".png");
+            $(".myImage img").attr("alt", image);           
+            $("#character-info").show();
+            funFacts($(this).attr("id"));                       
+        }        
+    });
 
     $("#reset").click(function(){
-         $("#character-info").hide();                 
+         $("#character-info").hide();
+         click = 0;                 
     });
     
     // Starwars API character select 
@@ -49,6 +55,5 @@ $(document).ready(function(){
             $("#data5").html("Eye Colour: " + data.eye_color);
             $("#data6").html("Birth year: " + data.birth_year);            
         });
-    }
-    
+    }    
 });
