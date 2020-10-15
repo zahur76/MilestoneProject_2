@@ -243,7 +243,11 @@ $(document).ready(function(){
     }
 
     //Sends API data to HTML div
-    function funFacts(){                   
+    function funFacts(){ 
+        // Add loading bar gif before data received
+        for(let i=1 ; i<=6; i++){
+            $("#data" + i).prepend($('<img>',{id:'theImg',src:'assets/images/load.gif',alt:"loading bar"}));  
+        }                   
         let randomNum = Math.floor(Math.random() * 80);
         getData("https://ci-swapi.herokuapp.com/api/people/"+randomNum+"/", function(data){            
             $("#data1").html("Name: " + data.name);
