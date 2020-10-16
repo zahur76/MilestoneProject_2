@@ -386,20 +386,17 @@ with Javacsript once the card was selected. This provided a more efficient style
 
 6. Once the main game was completed and testing peformed it was noticed that the play again button was hidden on the game end modal.
 This was adjusted by increasing modal height from 270px to 310px.
-
 ![Image of play button](assets/doc/error.png)
 
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
 
 8. While checking for browser compatibility it was found that the footer was not fixed to the bottom on IE browser. This issues was corrected 
-by changing ```flex: 1``` to ```flex-grow: 1```. 
-
+by changing ```flex: 1``` to ```flex-grow: 1```.
 ![Image of IE](assets/doc/error1.png)
 
 9. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
-This issue was addressed by changing font size. 
-
+This issue was addressed by changing font size.
 ![Image of error](assets/doc/error2.png)
 
 ## DEPLOYMENT
@@ -410,14 +407,15 @@ To deploy the project on github pages the following steps were used:
 1. Login to Github and select the the MilestoneProject_2 repository.
 2. Press the setting button on the top menu bar located on the right-hand side.
 ![image of github menu bar](assets/doc/github.png)
+
 3. Scroll down to the Github pages section and select Master branch from the dropdown menu and press save.
 ![image of github pages section](assets/doc/githubpages.png)
+
 4. Once completed an active link is published for the repository. 
 
 To run code locally the following steps should be performed:
 1. On GitHub, navigate to the main page of the repository.
 2. Above the list of files, click  Code and copy URL.
-
 ![image of github pages section](assets/doc/clone.png)
 
 3. Open Git Bash.
