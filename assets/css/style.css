@@ -20,6 +20,16 @@ h2{
     margin: 0 auto;      
 }
 
+h3{    
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(247, 4, 4, 0.8);
+    background:rgba(0,0,0,0.6);
+    width: 300px;
+    margin: 0 auto;
+}
+
 h5{
     letter-spacing: 1px;
     padding: 2px;    
@@ -245,5 +255,8 @@ input {
 
     .fun-facts div{
         font-size: 14px;
+    }
+    h3{
+        font-size: 20px;
     }       
 }
