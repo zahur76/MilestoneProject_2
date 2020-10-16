@@ -88,7 +88,20 @@ to prevent confusion while playing since this formed the main part of the game.
 
 The game initially started out as an idea to develop my javascript skills. Once the prototype was completed, it's concept 
 was used as groundwork to develop this project. One of the advantages gained by doing this was the ability to code the game 
-faster since the main game code logic had already been mapped out. The development cycle was as follows:
+faster since the main game code logic had already been mapped out. 
+
+The features were designed in the order that they would be selected while playing the game. For example the level select 
+feature modal was coded before the main game. Once the initial main game design was completed then a preliminary testing 
+performed as detailed [below](#testing). The development cycle main steps were as follows:
+
+1. Game design work
+2. Main game programming
+3. Mid project review and testing
+4. Character page programming
+5. Programming for non-existent page
+6. Final testing
+
+The full development cycle is detailed below:
 
 1. [wireframe](assets/doc/wireframe.pdf) created
 2. Index.html page created
@@ -97,29 +110,25 @@ faster since the main game code logic had already been mapped out. The developme
 5. Footer added
 6. Responsive design incorporated using boostrap
 7. Javascript file script.js created
-8. Level select modal added to index.html followed by coding of functions to show, hide modal and select levels in script.js
+8. Level select modal added to index.html followed by coding of functions to show/hide modal and select levels in script.js
 9. Functions required for main game logic coded (card selection, match check)
-10. Game end modal contructed in index.html followed by the coding of functions to show, hide modal and play again
+10. Game end modal contructed in index.html followed by the coding of functions to show/hide modal and play again
 12. Functions for reset and restart buttons were coded
 13. Perform Jasmine unit testing on functions to test for correct output 
 14. Audio files added and sound on/off functions coded
 15. Star wars API added
 16. Mid project review performed for possible improvements in design and coding
 17. Validators used to check for errors
-18. Any issues from step 16 and 17 were addressed
-19. Game given to relatives and friends for testing
+18. Any issues from step 16 and 17 were addressed. Examples were refactoring of style.css to remove character property 
+duplication and isssus due to responsiveness on smaller devices.
+19. Game distributed to relatives and friends for testing
 20. Character.html page created
-21. Functions for character.html page coded such character modal selection
-22. Star wars API included to character selection
-23. 404.html added page
-24. Final testing performed
+21. Styling of character home page
+22. Functions for character.html page coded (character modal selection, home button)
+23. Star wars API included to character selection page
+24. 404.html added page
+25. Final testing performed
 
-The above steps could be grouped into 5 main sections:
-1. Game design
-2. Main game programming
-3. Preliminary testing
-4. Character page programming
-5. Final testing
 
 The features were designed in the order that they would be selected while playing the game. For example the level select 
 feature modal was coded before the main game.
@@ -357,7 +366,7 @@ The following gives test results for button and link testing.
 |character.html  |click on facebook icon                  |Facebook star wars page to open up in new window         |Passed   |                     
 |character.html  |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
 |character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
-  
+|index.html      |click on non-existent link              |Direct to 404.html page                                  |Passed   |
   
 ### Bugs Encountered during development
 
