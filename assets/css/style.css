@@ -52,6 +52,24 @@ body{
     background-image: url("../images/space.jpg");
 }
 
+.notFound{
+    background: rgb(134, 145, 148);
+    text-align: center;   
+    margin: 20px;
+}
+
+.home2{    
+    color: black;    
+    width: 100px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.home2:hover{
+    text-decoration: none;
+    color: red;
+}
+
 .game{
     flex-grow: 1;
 }
