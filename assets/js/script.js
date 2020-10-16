@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     // Global Variables
+    let characterArray = [];
     let newArray = [];
     let click = 0;
     let checkArray = [];
@@ -16,7 +17,7 @@ $(document).ready(function(){
         let i;
         // Resets all classes
         for(i=1;i<=16;i++){
-            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card").removeAttr("style");;
+            $("#char_"+i).removeClass($("#char_"+i).attr("class")).addClass("card").removeAttr("style");
         }
         totalMatch = 0;
         totalTurns = 0;
@@ -191,8 +192,8 @@ $(document).ready(function(){
             $("#turns").html("<h1>" + totalTurns + "</h1>");                          
             // Return the card class and hide character class     
             setTimeout(function(){                                   
-            $("."+ array[0]).addClass("card").removeAttr("style");;
-            $("."+ array[1]).addClass("card").removeAttr("style");;           
+            $("."+ array[0]).addClass("card").removeAttr("style");
+            $("."+ array[1]).addClass("card").removeAttr("style");          
             checkArray = []; 
             click = 0;                                
             }, 2000);                        
