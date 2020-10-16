@@ -106,11 +106,13 @@ $(document).ready(function(){
 
     // Scroll screen to specific view point
     function scroll(){
-        window.scrollTo({
+        setTimeout(function(){
+            window.scrollTo({
             top:200,
             left: 0,
             behavior: 'smooth',
-        });
+            });
+        },500);        
     }
 
     // Initial display settings for Home page
