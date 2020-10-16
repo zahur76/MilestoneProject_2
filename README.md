@@ -41,7 +41,7 @@ user requirements.
 
 By visiting this site as a user I want to:
 * play a game to improve my congnitive function.  
-* be able to navigate through the site with minimal difficulty to start playing the game with ease. 
+* be able to navigate through the site with minimal difficulty inorder to play the game. 
 * be able to select different difficulty levels so I can adapt to my personal goals. 
 * have feedback on how well i am performing so as I can track any improvements in memory.
 * play a brain traning game whilst having a fun experience.
@@ -52,27 +52,28 @@ By visiting this site as a user I want to:
 
 A wireframe was constructed using balsamique wireframes. It can be found  [here](assets/doc/wireframe.pdf).
 
-The site was designed to be minimalist by changing page configuration upon user input. This would allow the user to easily navigate 
+The site was designed to change layout upon user input. This would allow the user to easily navigate 
 through the initial game selection by being exposed to information required only at that specific time. 
-For example, the level select modal would only appear once the "click to start' button had been clicked on which would be the next
-required user input. This was done with intention of improving UX. To achieve this design philosophy modals were inlcuded to provide information at the right time. 
+For example, the level select modal would only appear once the "click to start' button had been activated, prompting 
+the user for the next required input. This was done with intention of improving UX. To achieve this design philosophy 
+modals were inlcuded to provide information at the right time. 
 
 The character info section was included on a seperate page so as not to distract the user from the main game. It was included 
 as a secondary option for user to gain more knowledge about the characters in the main game. This would increase the overall
 site experience. 
 
-To further improve the UX the grid system was made to appear similar to the activation of a lightsaber. This effect was enhanced with 
-audio. 
+To further improve the UX the card grid system was initially hidden and would reveal itself similar to the activation of a lightsaber. 
+This effect was enhanced with audio. 
 
 At design stage a initial colour scheme diagram was produced so as to suit the Star wars theme as shown below.
 
 ![Image of mockup](assets/doc/mockup.png)
 
 The Star wars themed design was achieved by using a logo and blue text similar to what is seen at the beginning of Star wars films. 
-This was further enhanced by the use of a 'space' background image. 
+This was further enhanced by the use of a 'space' image background. 
 
 All buttons were designed to be identical with grey border, red text and black background.  This was thought to fit into 
-the Star wars sci-fy theme and would be easily identifiable. The control buttons were situated together for user ease. 
+the Star wars sci-fy theme. The control buttons were situated together for user ease. 
 
 The character facts link was placed at the bottom of the page since it was a secondary option and was not required to play the 
 main game. 
@@ -113,6 +114,13 @@ faster since the main game code logic had already been mapped out. The developme
 22. Star wars API included to character selection
 23. 404.html added page
 24. Final testing performed
+
+The above steps could be grouped into 5 main sections:
+1. Game design
+2. Main game programming
+3. Preliminary testing
+4. Character page programming
+5. Final testing
 
 The features were designed in the order that they would be selected while playing the game. For example the level select 
 feature modal was coded before the main game.
@@ -203,7 +211,7 @@ The '.card' class would be situated below '.character' class in css to make it t
 This section provides details of testing performed during development. Testing were carried during different phases of develpment as 
 indicated below:
 
-| Tests               | Stage Performed                                  | Tool used                                     |
+| Test                | Stage Performed                                  | Tool used                                     |
 |---------------------|:-------------------------------------------------|:----------------------------------------------|
 |Syntax errors        |Once During mid development and on completion     |W3C validator, css validator(jigsaw), jshint   |
 |Debugging            |During the whole project                          |Chrome Devtools                                |
@@ -226,7 +234,7 @@ improving:
 * attention to detail 
 * finding similarities and differences in objects
 
-2. User goal: *be able to navigate through the site with minimal difficulty to start playing the game with ease.*</br>
+2. User goal: *be able to navigate through the site with minimal difficulty inorder to play the game.*</br>
 The site design used straight forward user friendly step-by-step guides to help assist the player navigate
 the options with ease. This was further achieved by the use of hide/show jquery methods which manipulated modals and text changes.
 For example once the user selected "click here to play' the grid system would appear together with a 
@@ -235,8 +243,8 @@ This was further tested by allowing test users to play the game with minimum pro
 
 3. User goal: *be able to select different difficulty levels so I can adapt to my personal goals*</br>
 This was primarily achieved by providing a level select option which would change the card grid size and hence difficulty.
-Hence the user could change difficulty depending on his his what he wanted to achive. For example he could select easy level 
-because he was new to the game.
+Hence the user could change difficulty depending on his his what he wanted to achive. For example he could select easy hard 
+because he wanted more of a challenge.
 
 4. User goal: *have feedback on how well i am performing so as I can track any improvements in memory*</br>
 This was achieved by using a counter indicating how many turns have been taken which can be used as a
@@ -248,7 +256,7 @@ This was achieved by using Star Wars themed design which made the game more visu
 6. User goal: *be exposed to general Star Wars character facts so I can further my star wars knowledge*</br>
 This was achieved by consuming a Star Wars API provided by [swapi.dev](https://swapi.dev). This would provide a random character
 fact highlighting the characters name, height, weight, and hair-clour when the game finished. A second page
-was also included during delvelopment which allowed the user to click on specific Star wars characters to obtain facts.
+also allowed the user to click on specific Star wars characters to obtain facts.
 
 The above user goals were further tested by obtaining feedback from testers. The feedback was positive all on aspects.
 
@@ -263,7 +271,7 @@ Code syntax were checked for errors with the following validators:
 ![Image of html validator](assets/doc/css_validator.png)
 
 
-| Tests                          | Expected result              | Results            |                                 
+| Test                           | Expected result              | Results            |                                 
 |:-------------------------------|:-----------------------------|:-------------------|
 |W3C validator                   |No errors found               |Passed              |
 |css official validator(jigsaw)  |No errors or warnings to show |Passed              |                            
@@ -302,7 +310,9 @@ The scriptSpec.js file is located in the spec folder.
 ### Game testing
 
 The game was tested with friends and relatives to check for bugs and to obtain feedback. This was performed when main game 
-module was complete upto project completion. The game was mainly tested for bugs related to game logic. 
+module was complete upto project completion. The game was tested for game logic errors and design improvements. 
+
+Issues encountered and rectified are given [below](#bugs-encountered-during-development)
 
 ### Responsive design
 
@@ -314,6 +324,7 @@ extension was also used together with physical testing on smart phones, tablets 
 
 A final check was done using the website http://ami.responsivedesign.is/. 
 
+Issues encountered and rectified are given [below](#bugs-encountered-during-development)
 
 ### Browser compatibility
 
@@ -321,6 +332,8 @@ The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari an
 A cross browser check was also done using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
 
 ![reponsive design Image](assets/doc/browser.png)
+
+Issues encountered and rectified are given [below](#bugs-encountered-during-development)
 
 ### Button and link testing
 
@@ -344,12 +357,13 @@ The following gives test results for button and link testing.
 |character.html  |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
 |character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
   
+  
 ### Bugs Encountered during development
 
 During testing phase the following issues were indentified and corrected.
 
 1. Once a specific card was clicked it could be selected again causing the card game logic to breakdown. This was 
-resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in the click function.
+resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in the click function. 
 
 2. The Star Wars character funfact at the end of the game would not show up if a status other than 200 was obtained.
 To cater for this issue a defensive design was implemented by including an else if statement in the getData function so that if a status other than 200 was obtained
@@ -378,6 +392,16 @@ This was adjusted by increasing modal height from 270px to 310px.
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
 
 8. A hover effect was introduced to improve card selection. 
+
+9. While checking for browser compatibility it was found that the footer was not fixed to the bottom on IE. This issues was corrected 
+by changing ```flex: 1``` to ```flex-grow: 1```.
+
+![Image of IE](assets/doc/error1.png)
+
+10. While testing for reponsiveness using chrome dev tools it was noticed that the slogan would change lines on smaller devices.
+This issue was addressed by changing font size. 
+
+![Image of error](assets/doc/error2.png)
 
 ## DEPLOYMENT
 
