@@ -75,7 +75,7 @@ $(document).ready(function(){
         if($("input[type=radio][name=level]:checked").length===1){
             scroll();
             $("#levelSelect").hide();
-            $("#start").html("<h5>"+"Match the cards!"+"</h5>");          
+            $("#start").html("<h5>"+"Match the cards!"+"</h5>").removeClass("btn");          
             game();            
         }
         else{
