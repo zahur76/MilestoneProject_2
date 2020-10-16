@@ -18,8 +18,7 @@
     * [Jasmine unit testing](#jasmine-unit-testing)
     * [Game testing](#game-testing)
     * [Responsive design](#responsive-design)
-    * [Button and link testing](#button-and-link-testing)
-    * [Summary of test results](#summary-of-test-results)
+    * [Button and link testing](#button-and-link-testing)    
     * [Bugs encountered during development testing](#bugs-encountered-during-development)
 
 * [Deployment](#deployment)
@@ -267,15 +266,17 @@ Code syntax were checked for errors with the following validators:
 * css official validator(jigsaw) located [here](https://jigsaw.w3.org/css-validator/)
 * JSHint located [here](https://jshint.com/)
 
-![Image of html validator](assets/doc/html_validator.png)
-![Image of html validator](assets/doc/css_validator.png)
 
+Errors were corrected and final test results are given below:
 
 | Test                           | Expected result              | Results            |                                 
 |:-------------------------------|:-----------------------------|:-------------------|
 |W3C validator                   |No errors found               |Passed              |
 |css official validator(jigsaw)  |No errors or warnings to show |Passed              |                            
 |JSHint located                  |No warnings                   |Warnings present    |
+
+![Image of html validator](assets/doc/html_validator.png)
+![Image of html validator](assets/doc/css_validator.png)
 
 The Jshint test warning " 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." was due to
 syntax used for defining variables.
@@ -297,12 +298,12 @@ The scriptSpec.js file is located in the spec folder.
 | Test                           | Expected result                                     | Results  |                                 
 |:-------------------------------|:----------------------------------------------------|:---------|
 |expect(gameArray).toBeDefined() |Should exist                                         |Passed    |
-|gameArray("easy")               |yoda","yoda","vader","vader","luke","luke","r2","r2" |Passed    |                            
+|gameArray("easy")               |"yoda","yoda","vader","vader","luke","luke","r2","r2"|Passed    |                            
 |expect(matchCheck).toBeDefined()|Should exist                                         |Passed    |
 |matchCheck(["yoda","yoda"])     |should return total turns 1                          |Passed    |
 |matchCheck(["yoda","yoda"])     |should return total match 1                          |Passed    |
 |expect(game).toBeDefined()      |Should exist"                                        |Passed    |
-|expect(click).toBe(0)           |should be equal to 0"                                |Passed    |
+|expect(click).toBe(0)           |should be equal to 0                                 |Passed    |
 
 ![Image of jasmiine testing](assets/doc/jasmine.png)
 ![Image of jasmine testing](assets/doc/jasmine2.png)
@@ -383,7 +384,7 @@ by hiding the 'gameEnd' module if the restart button is pressed.
 to repeat each character class, consuming large amount of css lines, a solution was found whereby the background-image URL was added 
 with Javacsript once the card was selected. This provided a more efficient style sheet.
 
-6. Once the main game was completed and testing peform it was noticed that the play again button was hidden on the game end modal.
+6. Once the main game was completed and testing peformed it was noticed that the play again button was hidden on the game end modal.
 This was adjusted by increasing modal height from 270px to 310px.
 
 ![Image of play button](assets/doc/error.png)
@@ -391,14 +392,12 @@ This was adjusted by increasing modal height from 270px to 310px.
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
 
-8. A hover effect was introduced to improve card selection. 
-
-9. While checking for browser compatibility it was found that the footer was not fixed to the bottom on IE. This issues was corrected 
-by changing ```flex: 1``` to ```flex-grow: 1```.
+8. While checking for browser compatibility it was found that the footer was not fixed to the bottom on IE browser. This issues was corrected 
+by changing ```flex: 1``` to ```flex-grow: 1```. 
 
 ![Image of IE](assets/doc/error1.png)
 
-10. While testing for reponsiveness using chrome dev tools it was noticed that the slogan would change lines on smaller devices.
+9. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
 This issue was addressed by changing font size. 
 
 ![Image of error](assets/doc/error2.png)
@@ -427,6 +426,33 @@ To run code locally the following steps should be performed:
     $ git clone https://github.com/zahur76/MilestoneProject_2
 6. Press Enter to create your local clone.
 
+## FUTURE IMPROVEMENTS
 
+Add a countdown timer option to add another level of difficulty to the game. The user would be able to specify both
+a difficulty level and a time limit inorder to complete the game.
+
+## CREDITS
+
+### Content
+
+* Star Wars character facts obtained from open source API provided by https://swapi.dev/.
+* dev.to was consulted to assist in footer [placement](https://dev.to/amjadmh73/the-best-way-to-keep-the-footer-at-the-bottom-of-your-web-page-32ek).
+
+### Media
+
+* Google font from which the following fonts were used:
+    - Roboto
+    - Orbitron 
+    - Press Start 2P
+* Sound clips were obtained from https://www.101soundboards.com/.
+* Card images were purchased from mintParcel.com.
+* Logo obtained from https://flamingtext.com/.
+* Icons for home, social media and galactic senate were obtained from fontawesome.com.
+* Loading gif was obtained from icons8.com.
+
+### Acknowledgment
+
+* I would like to thank zara meerun, sofia meerun and behlal meerun for testing the game and also my mentor 
+Allen Thomas Varghese for his input during the mentor sessions.
 
 
