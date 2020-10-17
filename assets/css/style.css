@@ -70,6 +70,7 @@ body{
     color: red;
 }
 
+/* Code obtained from stackoverflow to make footer stick to bottom on IE*/
 .game{
     flex-grow: 1;
 }
@@ -249,7 +250,7 @@ input {
         line-height: 75px;
     }
     .fa-galactic-senate{   
-    font-size: 200px;    
+        font-size: 200px;    
     }
     h2{        
         text-align: center;
@@ -263,8 +264,8 @@ input {
         top: 225px;
     }
     #character-info{
-    width: 315px;
-    top: 150px; 
+        width: 315px;
+        top: 150px; 
     }
 
     .fun-facts{
