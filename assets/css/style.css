@@ -77,8 +77,19 @@ body{
 }
 
 /* header section*/
-header{
-    text-align: center;
+.logo{    
+    text-align: center;                         
+}
+
+.rules{
+    float: right;
+    color: red;
+    margin-top: 10px;
+    margin-right: 10px;    
+}
+
+.rules:hover{
+    color: rgb(146, 0, 0);    
 }
 
 /* Card section */
@@ -278,5 +289,8 @@ input {
     }
     h3{
         font-size: 20px;
+    }
+    .rules h5{
+        font-size: 12px;
     }       
 }
