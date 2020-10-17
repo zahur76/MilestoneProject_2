@@ -46,7 +46,6 @@ By visiting this site as a user I want to:
 * play a brain traning game whilst having a fun experience.
 * be exposed to general Star Wars character facts so I can further my Star wars knowledge.
 
-
 ### UX design work 
 
 A wireframe was constructed using balsamique wireframes. It can be found  [here](assets/doc/wireframe.pdf).
@@ -99,7 +98,8 @@ performed as detailed [below](#testing). The development cycle main steps were a
 3. Mid project review and testing
 4. Character page programming
 5. Programming for non-existent page
-6. Final testing
+6. Final project review
+7. Final testing
 
 The full development cycle is detailed below:
 
@@ -127,12 +127,14 @@ duplication and isssus due to responsiveness on smaller devices.
 22. Functions for character.html page coded (character modal selection, home button)
 23. Star wars API included to character selection page
 24. 404.html added page
-25. Final testing performed
+25. Final project review
+26. Adjustments made
+27. Final testing performed
 
 
 ## FEATURES
 
-The site consists of a two page design. The first page consists of the game which is made up of a logo, 
+The site consists of a two page design. The first page consists of the game which is made up of a logo, rules link, 
 card grid system, control buttons, counter and footer. Two modals have also been included and described below.
 
 ![Image of main page](assets/doc/mainpage.png)
@@ -319,7 +321,7 @@ The scriptSpec.js file is located in the spec folder.
 The game was tested with friends and relatives to check for bugs and to obtain feedback. This was performed when main game 
 module was complete upto project completion. The game was tested for game logic errors and design improvements. 
 
-Issues encountered and rectified are given [below](#bugs-encountered-during-development)
+Issues encountered and rectified are given [below](#issues-encountered-during-development)
 
 ### Responsive design
 
@@ -331,7 +333,7 @@ extension was also used together with physical testing on smart phones, tablets 
 
 A final check was done using the website http://ami.responsivedesign.is/. 
 
-Issues encountered and rectified are given [below](#bugs-encountered-during-development)
+Issues encountered and rectified are given [below](#issues-encountered-during-development)
 
 ### Browser compatibility
 
@@ -340,7 +342,7 @@ A cross browser check was also done using the website https://www.parrotqa.com c
 
 ![reponsive design Image](assets/doc/browser.png)
 
-Issues encountered and rectified are given [below](#bugs-encountered-during-development)
+Issues encountered and rectified are given [below](#issues-encountered-during-development)
 
 ### Button and link testing
 
@@ -364,7 +366,8 @@ The following gives test results for button and link testing.
 |character.html  |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
 |character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
 |index.html      |click on non-existent link              |Direct to 404.html page                                  |Passed   |
-  
+|index.html      |click on rules link                     |Direct to wikepedia page                                 |Passed   |
+
 ### Issues Encountered during development
 
 During testing phase the following issues were indentified and corrected.
@@ -404,6 +407,9 @@ by changing ```flex: 1``` to ```flex-grow: 1```.
 9. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
 This issue was addressed by changing font size.
 ![Image of error](assets/doc/error2.png)
+
+10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a rules tag 
+to the header which linked to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing the relevant information. 
 
 ## DEPLOYMENT
 
