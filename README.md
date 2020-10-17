@@ -43,7 +43,7 @@ By visiting this site as a user I want to:
 * be able to navigate through the site with minimal difficulty inorder to play the game. 
 * be provided with options so I can adapt to my personal preference. 
 * have feedback on how well I am performing so as I can track any improvements in memory.
-* play a brain traning game whilst having a fun experience.
+* play a brain training game whilst having a fun experience.
 * be exposed to general Star Wars character facts so I can further my Star wars knowledge.
 
 ### UX design work 
@@ -248,15 +248,15 @@ modal allowing the user to select difficulty level. Also the text "click here to
 This was further tested by allowing test users to play the game with minimum prompting.
 
 3. User goal: *be provided with options so I can adapt to my personal preference.*</br>
-This was primarily achieved by providing a [level select](#modals) option which would change the card grid size. This would permit 
-the user to change difficulty level depending on his requirements. For example the user could select easy hard because he wanted more of a challenge.
-Another option included to achieve this user goal was the [sound on/off](#control-buttons-and-counter) button.
+This was primarily achieved by providing a [level select](#modals) option which would change the card grid size from easy (2x4) to hard (4x4). This would permit 
+the user to change difficulty level depending on personal requirements. For example, the user could select hard to experience more of a challenge.
+Another option included was the [sound on/off](#control-buttons-and-counter) button.
 
 4. User goal: *have feedback on how well i am performing so as I can track any improvements in memory*</br>
 This was achieved by using a [counter](#control-buttons-and-counter) indicating how many turns have been taken which can be used as a
 baseline for future game attempts.
 
-5. User goal: *play a brain traning game whilst having a fun experience*</br>
+5. User goal: *play a brain training game whilst having a fun experience*</br>
 This was achieved by using Star Wars themed design which made the game more visually appealing.
 
 6. User goal: *be exposed to general Star Wars character facts so I can further my star wars knowledge*</br>
@@ -318,18 +318,29 @@ The scriptSpec.js file is located in the spec folder.
 
 ### Game testing
 
-The game was tested with friends and relatives to check for bugs and to obtain feedback. This was performed when main game 
-module was complete upto project completion. The game was tested for game logic errors and design improvements. 
+The game was tested with friends and relatives to check for bugs and to obtain general feedback. This was performed when main game 
+module was complete upto project completion. 
 
 Issues encountered and rectified are given [below](#issues-encountered-during-development)
 
 ### Responsive design
 
 The site was viewed on different device sizes to check for correct reponsive design. This was done using primarily
-Chrome DevTools with different emulated devices(moto G4, iphone 6/7/8, ipad, ipad pro). The reponsive viewer chrome 
-extension was also used together with physical testing on smart phones, tablets and desktop computers. 
-
+Chrome DevTools with different emulated devices(moto G4, iphone 6/7/8, ipad, ipad pro). The responsive viewer chrome 
+extension was also used covering the following screen resolutions:
+1. 1280 X 800 (large screen)
+2. 1024 X 800 (medium screen)
+2. 414 X 736  (iPhone 8 Plus, 7 Plus, 6S Plus)
+3. 375 X 667  (iPhone 8, 7, 6S, 6)
+4. 414 X 896  (iPhone XR, XS Max)
+5. 375 X 812  (iPhone XS, X)
+6. 412 X 846  (Galaxy S9 Plus, S8 Plus)
+7. 360 X 740  (Galaxy S9, Note 8, S8)
+8. 323 X 786  (Pixel 3, 3 XL)
 ![reponsive design Image](assets/doc/responsive_two.png)
+
+A physical testing was also performed on smart phones, tablets and desktop computers. 
+
 
 A final check was done using the website http://ami.responsivedesign.is/. 
 
@@ -339,7 +350,6 @@ Issues encountered and rectified are given [below](#issues-encountered-during-de
 
 The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera by running the game on these browsers.
 A cross browser check was also done using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
-
 ![reponsive design Image](assets/doc/browser.png)
 
 Issues encountered and rectified are given [below](#issues-encountered-during-development)
@@ -429,6 +439,7 @@ To run code locally the following steps should be performed:
 1. On GitHub, navigate to the main page of the repository.
 2. Above the list of files, click  Code and copy URL.
 ![image of github pages section](assets/doc/clone.png)
+
 3. Open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory.
 5. Type git clone, and then paste the URL you copied earlier.</br>
