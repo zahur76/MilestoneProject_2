@@ -19,7 +19,7 @@
     * [Game testing](#game-testing)
     * [Responsive design](#responsive-design)
     * [Button and link testing](#button-and-link-testing)    
-    * [Bugs encountered during development testing](#bugs-encountered-during-development)
+    * [Issues encountered during development testing](#issues-encountered-during-development)
 
 * [Deployment](#deployment)
 * [Future improvments](#future-improvements)
@@ -41,8 +41,8 @@ user requirements.
 By visiting this site as a user I want to:
 * play a game to improve my congnitive function.  
 * be able to navigate through the site with minimal difficulty inorder to play the game. 
-* be able to select different difficulty levels so I can adapt to my personal goals. 
-* have feedback on how well i am performing so as I can track any improvements in memory.
+* be provided with options so I can adapt to my personal preference. 
+* have feedback on how well I am performing so as I can track any improvements in memory.
 * play a brain traning game whilst having a fun experience.
 * be exposed to general Star Wars character facts so I can further my Star wars knowledge.
 
@@ -55,13 +55,13 @@ The site was designed to change layout upon user input. This would allow the use
 through the initial game selection by being exposed to information required only at that specific time. 
 For example, the level select modal would only appear once the "click to start' button had been activated, prompting 
 the user for the next required input. This was done with intention of improving UX. To achieve this design philosophy 
-modals were inlcuded to provide information at the right time. 
+modals were inlcuded. 
 
-The character info section was included on a seperate page so as not to distract the user from the main game. It was included 
-as a secondary option for user to gain more knowledge about the characters in the main game. This would increase the overall
+The character info section was included on a seperate page so as not to distract the user from the main game. It was designed
+more as a secondary option for user to gain more knowledge about the characters in the main game. This would increase the overall
 site experience. 
 
-To further improve the UX the card grid system was initially hidden and would reveal itself similar to the activation of a lightsaber. 
+To further improve the UX the card grid system was initially hidden and would reveal itself in a way similar to the activation of a lightsaber. 
 This effect was enhanced with audio. 
 
 At design stage a initial colour scheme diagram was produced so as to suit the Star wars theme as shown below.
@@ -77,7 +77,7 @@ the Star wars sci-fy theme. The control buttons were situated together for user 
 The character facts link was placed at the bottom of the page since it was a secondary option and was not required to play the 
 main game. 
 
-The cards were given a grey colour (rgb(105, 102, 102)) to provide good contrast to the background. 
+The tiles were given a grey colour (rgb(105, 102, 102)) to provide good contrast to the background. 
 
 The actually character cards were chosen to be of cartoon nature since this was thought to be more suited 
 for a memory match game. Most importantly the character images were chosen so as to be as visually different as possible from each other
@@ -130,10 +130,6 @@ duplication and isssus due to responsiveness on smaller devices.
 25. Final testing performed
 
 
-The features were designed in the order that they would be selected while playing the game. For example the level select 
-feature modal was coded before the main game.
-Once the initial main game design was completed then a preliminary testing performed as detailed [below](#testing). 
-
 ## FEATURES
 
 The site consists of a two page design. The first page consists of the game which is made up of a logo, 
@@ -150,7 +146,7 @@ back to game.
 
 ![Image of card grid system](assets/doc/grid.png)
 
-The card grid system forms the main part of the site whereby the user can select a pair of cards for comparison.
+The card grid system forms the main part of the site whereby the user can click on tiles to select a pair of cards for comparison.
 The design also includes a hover effect to assist the user is knowing which card will be selected.
 
 ### Control buttons and counter
@@ -249,13 +245,13 @@ For example once the user selected "click here to play' the grid system would ap
 modal allowing the user to select difficulty level. Also the text "click here to play" changes to "match the cards" indicating that the game has started.
 This was further tested by allowing test users to play the game with minimum prompting.
 
-3. User goal: *be able to select different difficulty levels so I can adapt to my personal goals*</br>
-This was primarily achieved by providing a level select option which would change the card grid size and hence difficulty.
-Hence the user could change difficulty depending on his his what he wanted to achive. For example he could select easy hard 
-because he wanted more of a challenge.
+3. User goal: *be provided with options so I can adapt to my personal preference.*</br>
+This was primarily achieved by providing a [level select](#modals) option which would change the card grid size. This would permit 
+the user to change difficulty level depending on his requirements. For example the user could select easy hard because he wanted more of a challenge.
+Another option included to achieve this user goal was the [sound on/off](#control-buttons-and-counter) button.
 
 4. User goal: *have feedback on how well i am performing so as I can track any improvements in memory*</br>
-This was achieved by using a counter indicating how many turns have been taken which can be used as a
+This was achieved by using a [counter](#control-buttons-and-counter) indicating how many turns have been taken which can be used as a
 baseline for future game attempts.
 
 5. User goal: *play a brain traning game whilst having a fun experience*</br>
@@ -265,6 +261,7 @@ This was achieved by using Star Wars themed design which made the game more visu
 This was achieved by consuming a Star Wars API provided by [swapi.dev](https://swapi.dev). This would provide a random character
 fact highlighting the characters name, height, weight, and hair-clour when the game finished. A second page
 also allowed the user to click on specific Star wars characters to obtain facts.
+These features are described [above](#modals).
 
 The above user goals were further tested by obtaining feedback from testers. The feedback was positive all on aspects.
 
@@ -368,11 +365,11 @@ The following gives test results for button and link testing.
 |character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
 |index.html      |click on non-existent link              |Direct to 404.html page                                  |Passed   |
   
-### Bugs Encountered during development
+### Issues Encountered during development
 
 During testing phase the following issues were indentified and corrected.
 
-1. Once a specific card was clicked it could be selected again causing the card game logic to breakdown. This was 
+1. Once a specific card was exposed it could be selected again causing the card game logic to breakdown. This was 
 resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in the click function. 
 
 2. The Star Wars character funfact at the end of the game would not show up if a status other than 200 was obtained.
