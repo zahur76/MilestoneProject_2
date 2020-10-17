@@ -429,7 +429,6 @@ To run code locally the following steps should be performed:
 1. On GitHub, navigate to the main page of the repository.
 2. Above the list of files, click  Code and copy URL.
 ![image of github pages section](assets/doc/clone.png)
-
 3. Open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory.
 5. Type git clone, and then paste the URL you copied earlier.</br>
@@ -445,6 +444,7 @@ a difficulty level and a time limit inorder to complete the game.
 
 ### Content
 
+* Rules obtained from [wikepedia](https://en.wikipedia.org/wiki/Matching_game)
 * Star Wars character facts obtained from open source API provided by https://swapi.dev/.
 * dev.to was consulted to assist in footer [placement](https://dev.to/amjadmh73/the-best-way-to-keep-the-footer-at-the-bottom-of-your-web-page-32ek).
 
