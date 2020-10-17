@@ -8,7 +8,7 @@ $(document).ready(function(){
     let totalTurns = 0;
     let totalMatch = 0;
     
-    // initilise home page
+    // initialise home page
     gameStart();
 
     // Restart button to initialise all variables
@@ -105,11 +105,11 @@ $(document).ready(function(){
         }
     });
 
-    // Scroll screen to specific view point
+    // Scroll screen to specific view point. Code obtained from W3.schools.com
     function scroll(){
         setTimeout(function(){
-            window.scrollTo({
-            top:200,
+            window.scroll({
+            top:270,
             left: 0,
             behavior: 'smooth',
             });
