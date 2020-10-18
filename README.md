@@ -105,8 +105,6 @@ Functions for the main game were designed in the following order:
 
 ![function design order](assets/doc/function.png)
 
-
-
 The full development cycle is detailed below:
 
 1. [wireframe](assets/doc/wireframe.pdf) created
@@ -221,8 +219,7 @@ The '.card' class would be situated below '.character' class in css to make it t
 
 ## TESTING 
 
-This section provides details of testing performed during development. Testing was carried out at different stages of development as 
-indicated below:
+This section provides details of testing performed during development. The following table highlights the different stages when testing were carried out:
 
 | Test                | Stage Performed                                  | Tool used                                     |
 |---------------------|:-------------------------------------------------|:----------------------------------------------|
@@ -260,16 +257,16 @@ the user to change difficulty level depending on personal requirements. For exam
 Another option included was the [sound on/off](#control-buttons-and-counter) button.
 
 4. User goal: *have feedback on how well i am performing so as I can track any improvements in memory*</br>
-This was achieved by using a [counter](#control-buttons-and-counter) indicating how many turns have been taken which can be used as a
-baseline for future game attempts.
+This was achieved by using a [counter](#control-buttons-and-counter) indicating how many turns had been taken which could be used as a
+baseline for improvement during future game attempts.
 
 5. User goal: *play a brain training game whilst having a fun experience*</br>
-This was achieved by using Star Wars themed design which made the game more visually appealing.
+This was achieved by using a Star Wars themed design which made the game more visually appealing.
 
 6. User goal: *be exposed to general Star Wars character facts so I can further my star wars knowledge*</br>
 This was achieved by consuming a Star Wars API provided by [swapi.dev](https://swapi.dev). This would provide a random character
-fact highlighting the characters name, height, weight, and hair-clour when the game finished. A second page
-also allowed the user to click on specific Star wars characters to obtain facts.
+fact highlighting the characters name, height, weight, and hair-colour when the game finished. The second page
+also allowed the user to click on specific Star wars characters included in the game to obtain facts.
 These features are described [above](#modals).
 
 The above user goals were further tested by obtaining feedback from testers. The feedback was positive all on aspects.
@@ -284,16 +281,16 @@ Code syntax were checked for errors with the following validators:
 
 Errors were corrected and final test results are given below:
 
-| Test                           | Expected result              | Results            |                                 
-|:-------------------------------|:-----------------------------|:-------------------|
-|W3C validator                   |No errors found               |Passed              |
-|css official validator(jigsaw)  |No errors found               |Passed              |                            
-|JSHint located                  |No warnings                   |Warnings present    |
+| Test                           | Expected result                | Results            |                                 
+|:-------------------------------|:-------------------------------|:-------------------|
+|W3C validator                   |No errors or warnings to show   |Passed              |
+|css official validator(jigsaw)  |No errors found                 |Passed              |                            
+|JSHint located                  |Congratulations. No error found |Warnings present    |
 
 ![Image of html validator](assets/doc/html_validator.png)
 ![Image of html validator](assets/doc/css_validator.png)
 
-The Jshint test warning " 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." was due to
+The Jshint test results had the warning " 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." was due to
 syntax used for defining variables.
 
 ### Chrome DevTools
@@ -306,7 +303,7 @@ Chrome DevTools were used extensively during development phase to assist in:
 
 ### Jasmine unit testing
 
-Once the main game functions were completed Jasmine framework was used to ensure functions were defined and output were correct. 
+Once the main game functions were completed, Jasmine framework was used to ensure functions were defined and output were correct. 
 Tests were successful as detailed below. 
 The scriptSpec.js file is located in the spec folder.
 
@@ -335,15 +332,19 @@ Issues encountered and rectified are given [below](#issues-encountered-during-de
 The site was viewed on different device sizes to check for correct reponsive design. This was done using primarily
 Chrome DevTools with different emulated devices(moto G4, iphone 6/7/8, ipad, ipad pro). The responsive viewer chrome 
 extension was also used covering the following screen resolutions:
-1. 1280 X 800 (large screen)
-2. 1024 X 800 (medium screen)
-2. 414 X 736  (iPhone 8 Plus, 7 Plus, 6S Plus)
-3. 375 X 667  (iPhone 8, 7, 6S, 6)
-4. 414 X 896  (iPhone XR, XS Max)
-5. 375 X 812  (iPhone XS, X)
-6. 412 X 846  (Galaxy S9 Plus, S8 Plus)
-7. 360 X 740  (Galaxy S9, Note 8, S8)
-8. 323 X 786  (Pixel 3, 3 XL)
+
+|Screen resolution| Device                        |
+|:----------------|:------------------------------|
+|1280 X 800       |large screen                   |
+|1024 X 800       |medium screen                  |
+|414 X 736        |iPhone 8 Plus, 7 Plus, 6S Plus |
+|375 X 667        |iPhone 8, 7, 6S, 6             |
+|414 X 896        |iPhone XR, XS Max              |
+|375 X 812        |iPhone XS, X                   |
+|412 X 846        |Galaxy S9 Plus, S8 Plus        |
+|360 X 740        |Galaxy S9, Note 8, S8          |
+|323 X 786        |Pixel 3, 3 XL                  |
+
 ![reponsive design Image](assets/doc/responsive_two.png)
 
 A final check was done using the website http://ami.responsivedesign.is/. 
@@ -352,8 +353,8 @@ Issues encountered and rectified are given [below](#issues-encountered-during-de
 
 ### Browser compatibility
 
-The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera by running the game on these browsers.
-A cross browser check was also done using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
+The site was tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera. An automated test was also perfomed using 
+a cross browser checker using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
 
 ![reponsive design Image](assets/doc/browser.png)
 
@@ -395,7 +396,7 @@ resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in t
 To cater for this issue a defensive design was implemented by including an else if statement in the getData function so that if a status other than 200 was obtained
 a default character fact would appear. Character chosen was Luke Skywalker. This was further tested by providing an incorrect URL to the getdata function 
 and checking the output.</br>
-For the character-info.html page 'data unavailable' would appear in the fields. 
+For the character-info.html page 'data unavailable' would appear in the fields.</br> 
 ![Image of unavailable data](assets/doc/data.png)
 
 3. On the level select modal the play button could be pressed without a level being selected. To fix this bug
@@ -410,18 +411,18 @@ to repeat each character class, consuming large amount of css lines, a solution 
 with Javacsript once the card was selected. This provided a more efficient style sheet.
 
 6. Once the main game was completed and testing peformed it was noticed that the play again button was hidden on the game end modal.
-This was adjusted by increasing modal height from 270px to 310px.
+This was adjusted by increasing modal height from 270px to 310px.</br>
 ![Image of play button](assets/doc/error.png)
 
 7. When the game was completed and the fun facts would appear it would briefly show the previous character info. This issue
 was addressed by adding a loading bar gif when ever the fun facts function was called and no repsonse from the API had been obtained yet.
 
 8. While checking for browser compatibility it was found that the footer was not fixed to the bottom on IE browser. This issues was corrected 
-by changing ```flex: 1``` to ```flex-grow: 1```.
+by changing ```flex: 1``` to ```flex-grow: 1```.</br>
 ![Image of IE](assets/doc/error1.png)
 
 9. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
-This issue was addressed by changing font size.
+This issue was addressed by changing font size.</br>
 ![Image of error](assets/doc/error2.png)
 
 10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  
@@ -433,17 +434,17 @@ Gitpod was used as an online IDE and then pushed to GITHUB for [hosting](https:/
 
 To deploy the project on github pages the following steps were used:
 1. Login to Github and select the the MilestoneProject_2 repository.
-2. Press the setting button on the top menu bar located on the right-hand side.
+2. Press the setting button on the top menu bar located on the right-hand side.</br>
 ![image of github menu bar](assets/doc/github.png)
 
-3. Scroll down to the Github pages section and select Master branch from the dropdown menu and press save.
+3. Scroll down to the Github pages section and select Master branch from the dropdown menu and press save.</br>
 ![image of github pages section](assets/doc/githubpages.png)
 
 4. Once completed an active link is published for the repository. 
 
 To run code locally the following steps should be performed:
 1. On GitHub, navigate to the main page of the repository.
-2. Above the list of files, click  Code and copy URL.
+2. Above the list of files, click  Code and copy URL.</br>
 ![image of github pages section](assets/doc/clone.png)
 3. Open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory.
