@@ -221,7 +221,7 @@ The '.card' class would be situated below '.character' class in css to make it t
 
 ## TESTING 
 
-This section provides details of testing performed during development. Testing was carried out at different phases of develpment as 
+This section provides details of testing performed during development. Testing was carried out at different stages of development as 
 indicated below:
 
 | Test                | Stage Performed                                  | Tool used                                     |
