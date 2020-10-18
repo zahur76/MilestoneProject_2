@@ -67,7 +67,9 @@ $(document).ready(function(){
         $("#sound").show("slow");
         $(".fa-galactic-senate").hide();          
         document.getElementById("myAudio1").play();
-        $("#levelSelect").show();
+        setTimeout(function(){
+             $("#levelSelect").show();
+        },1000);       
     });
 
     // Removes level select Modal and starts game    
