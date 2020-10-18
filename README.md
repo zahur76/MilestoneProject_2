@@ -425,8 +425,7 @@ by changing ```flex: 1``` to ```flex-grow: 1```.</br>
 This issue was addressed by changing font size.</br>
 ![Image of error](assets/doc/error2.png)
 
-10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  
-the header which directs to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing generic rules on how to play. 
+10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  the header which directs to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing generic rules on how to play. 
 
 ## DEPLOYMENT
 
