@@ -19,7 +19,7 @@
     * [Game testing](#game-testing)
     * [Responsive design](#responsive-design)
     * [Button and link testing](#button-and-link-testing)    
-    * [Issues encountered during development testing](#issues-encountered-during-development)
+    * [Issues encountered during development](#issues-encountered-during-development)
 
 * [Deployment](#deployment)
 * [Future improvments](#future-improvements)
@@ -43,7 +43,7 @@ By visiting this site as a user I want to:
 * be able to navigate through the site with minimal difficulty inorder to play the game. 
 * be provided with options so I can adapt to my personal preference. 
 * have feedback on how well I am performing so as I can track any improvements in memory.
-* play a brain training game whilst having a fun experience.
+* play a brain traning game whilst having a fun experience.
 * be exposed to general Star Wars character facts so I can further my Star wars knowledge.
 
 ### UX design work 
@@ -90,8 +90,8 @@ was used as groundwork to develop this project. One of the advantages gained by 
 faster since the main game code logic had already been mapped out. 
 
 The features were designed in the order that they would be selected while playing the game. For example the level select 
-feature modal was coded before the main game. Once the initial main game design was completed then a preliminary testing 
-performed as detailed [below](#testing). The development cycle main steps were as follows:
+feature modal was coded before the main game. Once the initial main game design was completed, preliminary testing was
+performed as detailed [below](#testing). The project development cycle main steps were as follows:
 
 1. Game design work
 2. Main game programming
@@ -101,46 +101,53 @@ performed as detailed [below](#testing). The development cycle main steps were a
 6. Final project review
 7. Final testing
 
+Functions for the main game were designed in the following order:
+
+![function design order](assets/doc/function.png)
+
+
+
 The full development cycle is detailed below:
 
 1. [wireframe](assets/doc/wireframe.pdf) created
-2. Index.html page created
-3. Preliminary styling added to index.html page
-4. Logo and slogan added to index.html page 
-5. Footer added
-6. Responsive design incorporated using boostrap
+2. Index.html page created.
+3. Preliminary styling added to index.html page.
+4. Logo and slogan added to index.html page. 
+5. Footer added.
+6. Responsive design incorporated using boostrap.
 7. Javascript file script.js created
-8. Level select modal added to index.html followed by coding of functions to show/hide modal and select levels in script.js
-9. Functions required for main game logic coded (card selection, match check)
-10. Game end modal contructed in index.html followed by the coding of functions to show/hide modal and play again
-12. Functions for reset and restart buttons were coded
-13. Perform Jasmine unit testing on functions to test for correct output 
-14. Audio files added and sound on/off functions coded
-15. Star wars API added
-16. Mid project review performed for possible improvements in design and coding
-17. Validators used to check for errors
+8. Level select modal added to index.html followed by the coding of functions to show/hide modal and select levels.
+9. Functions required for main game logic coded (character array definition, array shufle, array assignment, card selection, match check)
+10. Game end modal feature incorporated in index.html. This was followed by the coding of show/hide and play again functions. 
+12. Restart button function coded. 
+13. Perform Jasmine unit testing on functions to test for correct output. 
+14. Audio files added and sound on/off functions coded.
+15. Star wars API coded and incorporated into game end modal.
+16. Mid project review performed for possible improvements in design and coding.
+17. Validators used to check for errors.
 18. Any issues from step 16 and 17 were addressed. Examples were refactoring of style.css to remove character property 
 duplication and isssus due to responsiveness on smaller devices.
-19. Game distributed to relatives and friends for testing
-20. Character.html page created
-21. Styling of character home page
+19. Game distributed to relatives and friends for testing.
+20. Character.html page created.
+21. Styling of character home page.
 22. Functions for character.html page coded (character modal selection, home button)
-23. Star wars API included to character selection page
-24. 404.html added page
-25. Final project review
-26. Adjustments made
-27. Final testing performed
+23. Star wars API included to character selection page.
+24. 404.html added page.
+25. Final project review.
+26. Adjustment made.
+27. Addition of rules link.
+28. Final testing performed.
 
 
 ## FEATURES
 
 The site consists of a two page design. The first page consists of the game which is made up of a logo, rules link, 
-card grid system, control buttons, counter and footer. Two modals have also been included and described below.
+card grid system, control buttons, counter and footer. Three modals have also been included and described below.
 
 ![Image of main page](assets/doc/mainpage.png)
 
-The second page consists of card grid system which can be clicked to show character facts with a home button to return
-back to game. 
+The second page consists of a tile grid system which can be clicked on to show character facts. A home button was also included
+below the tiles. 
 
 ![Image of character page](assets/doc/characterpage.png)
 
@@ -214,7 +221,7 @@ The '.card' class would be situated below '.character' class in css to make it t
 
 ## TESTING 
 
-This section provides details of testing performed during development. Testing were carried during different phases of develpment as 
+This section provides details of testing performed during development. Testing was carried out at different phases of develpment as 
 indicated below:
 
 | Test                | Stage Performed                                  | Tool used                                     |
@@ -248,15 +255,15 @@ modal allowing the user to select difficulty level. Also the text "click here to
 This was further tested by allowing test users to play the game with minimum prompting.
 
 3. User goal: *be provided with options so I can adapt to my personal preference.*</br>
-This was primarily achieved by providing a [level select](#modals) option which would change the card grid size from easy (2x4) to hard (4x4). This would permit 
-the user to change difficulty level depending on personal requirements. For example, the user could select hard to experience more of a challenge.
-Another option included was the [sound on/off](#control-buttons-and-counter) button.
+This was primarily achieved by providing a [level select](#modals) option which would change the card grid size. This would permit 
+the user to change difficulty level depending on his requirements. For example the user could select easy hard because he wanted more of a challenge.
+Another option included to achieve this user goal was the [sound on/off](#control-buttons-and-counter) button.
 
 4. User goal: *have feedback on how well i am performing so as I can track any improvements in memory*</br>
 This was achieved by using a [counter](#control-buttons-and-counter) indicating how many turns have been taken which can be used as a
 baseline for future game attempts.
 
-5. User goal: *play a brain training game whilst having a fun experience*</br>
+5. User goal: *play a brain traning game whilst having a fun experience*</br>
 This was achieved by using Star Wars themed design which made the game more visually appealing.
 
 6. User goal: *be exposed to general Star Wars character facts so I can further my star wars knowledge*</br>
@@ -280,7 +287,7 @@ Errors were corrected and final test results are given below:
 | Test                           | Expected result              | Results            |                                 
 |:-------------------------------|:-----------------------------|:-------------------|
 |W3C validator                   |No errors found               |Passed              |
-|css official validator(jigsaw)  |No errors or warnings to show |Passed              |                            
+|css official validator(jigsaw)  |No errors found               |Passed              |                            
 |JSHint located                  |No warnings                   |Warnings present    |
 
 ![Image of html validator](assets/doc/html_validator.png)
@@ -318,29 +325,18 @@ The scriptSpec.js file is located in the spec folder.
 
 ### Game testing
 
-The game was tested with friends and relatives to check for bugs and to obtain general feedback. This was performed when main game 
-module was complete upto project completion. 
+The game was tested with friends and relatives to check for bugs and to obtain feedback. This was performed when main game 
+module was complete upto project completion. The game was tested for game logic errors and design improvements. 
 
 Issues encountered and rectified are given [below](#issues-encountered-during-development)
 
 ### Responsive design
 
 The site was viewed on different device sizes to check for correct reponsive design. This was done using primarily
-Chrome DevTools with different emulated devices(moto G4, iphone 6/7/8, ipad, ipad pro). The responsive viewer chrome 
-extension was also used covering the following screen resolutions:
-1. 1280 X 800 (large screen)
-2. 1024 X 800 (medium screen)
-2. 414 X 736  (iPhone 8 Plus, 7 Plus, 6S Plus)
-3. 375 X 667  (iPhone 8, 7, 6S, 6)
-4. 414 X 896  (iPhone XR, XS Max)
-5. 375 X 812  (iPhone XS, X)
-6. 412 X 846  (Galaxy S9 Plus, S8 Plus)
-7. 360 X 740  (Galaxy S9, Note 8, S8)
-8. 323 X 786  (Pixel 3, 3 XL)
+Chrome DevTools with different emulated devices(moto G4, iphone 6/7/8, ipad, ipad pro). The reponsive viewer chrome 
+extension was also used together with physical testing on smart phones, tablets and desktop computers. 
+
 ![reponsive design Image](assets/doc/responsive_two.png)
-
-A physical testing was also performed on smart phones, tablets and desktop computers. 
-
 
 A final check was done using the website http://ami.responsivedesign.is/. 
 
@@ -350,6 +346,7 @@ Issues encountered and rectified are given [below](#issues-encountered-during-de
 
 The site was also tested on Google Chrome, FireFox, Internet Explorer, Safari and Opera by running the game on these browsers.
 A cross browser check was also done using the website https://www.parrotqa.com catering for chrome, safari and FireFox.
+
 ![reponsive design Image](assets/doc/browser.png)
 
 Issues encountered and rectified are given [below](#issues-encountered-during-development)
@@ -369,14 +366,15 @@ The following gives test results for button and link testing.
 |index.html      |click on facebook icon                  |Facebook star wars page to open up in new window         |Passed   |                     
 |index.html      |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
 |index.html      |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |  
+|index.html      |click on character facts                |Page directs to character.html page                      |Passed   | 
 |character.html  |click on home button                    |Return back to index.html page                           |Passed   |
 |character.html  |click on card                           |character  modal to appear with image and facts          |Passed   |                           
 |character.html  |click on modal close button             |Character facts modal game to disappear                  |Passed   |
 |character.html  |click on facebook icon                  |Facebook star wars page to open up in new window         |Passed   |                     
 |character.html  |click on twitter icon                   |Twitter star wars page to open up in new window          |Passed   |         
 |character.html  |click on Insagram icon                  |Instagram star wars page to open up in new window        |Passed   |
-|index.html      |click on non-existent link              |Direct to 404.html page                                  |Passed   |
-|index.html      |click on rules link                     |Direct to wikepedia page                                 |Passed   |
+|index.html      |click on non-existent link              |Page directs to 404.html page                            |Passed   |
+|index.html      |click on rules link                     |Wikepedia page to open in new window                     |Passed   |
 
 ### Issues Encountered during development
 
@@ -389,7 +387,7 @@ resolved by adding the condition ```(($(this).attr("class")).length)>=6)``` in t
 To cater for this issue a defensive design was implemented by including an else if statement in the getData function so that if a status other than 200 was obtained
 a default character fact would appear. Character chosen was Luke Skywalker. This was further tested by providing an incorrect URL to the getdata function 
 and checking the output.</br>
-In the case of character facts on the character-info.html page 'data unavailable' would appear in the fields. 
+For the character-info.html page 'data unavailable' would appear in the fields. 
 ![Image of unavailable data](assets/doc/data.png)
 
 3. On the level select modal the play button could be pressed without a level being selected. To fix this bug
@@ -418,8 +416,8 @@ by changing ```flex: 1``` to ```flex-grow: 1```.
 This issue was addressed by changing font size.
 ![Image of error](assets/doc/error2.png)
 
-10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a rules tag 
-to the header which linked to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing the relevant information. 
+10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  
+the header which directs to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing generic rules on how to play. 
 
 ## DEPLOYMENT
 
@@ -439,7 +437,6 @@ To run code locally the following steps should be performed:
 1. On GitHub, navigate to the main page of the repository.
 2. Above the list of files, click  Code and copy URL.
 ![image of github pages section](assets/doc/clone.png)
-
 3. Open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory.
 5. Type git clone, and then paste the URL you copied earlier.</br>
@@ -455,25 +452,26 @@ a difficulty level and a time limit inorder to complete the game.
 
 ### Content
 
-* Rules obtained from [wikepedia](https://en.wikipedia.org/wiki/Matching_game)
-* Star Wars character facts obtained from open source API provided by https://swapi.dev/.
+* [wikepedia](https://en.wikipedia.org/wiki/Matching_game) was used as source for rules.
+* Star Wars character facts obtained from open source [swapi](https://swapi.dev/).
 * dev.to was consulted to assist in footer [placement](https://dev.to/amjadmh73/the-best-way-to-keep-the-footer-at-the-bottom-of-your-web-page-32ek).
 
 ### Media
 
-* Google font from which the following fonts were used:
+* The following fonts were used from [google font](https://fonts.google.com/):
     - Roboto
     - Orbitron 
     - Press Start 2P
-* Sound clips were obtained from https://www.101soundboards.com/.
-* Card images were purchased from mintParcel.com.
-* Logo obtained from https://flamingtext.com/.
-* Icons for home, social media and galactic senate were obtained from fontawesome.com.
-* Loading gif was obtained from icons8.com.
+* Sound clips were obtained from [101 soundboard](https://www.101soundboards.com/).
+* Card images were purchased from [mintParcel](https://www.mintparcel.com).
+* Logo obtained from [flaming text](https://flamingtext.com/).
+* Icons for home, social media and galactic senate were obtained from [font awesome](https://www.fontawesome.com).
+* Loading gif was obtained from [icons8](https://icons8.com/).
 
 ### Acknowledgment
 
 * I would like to thank zara meerun, sofia meerun and behlal meerun for testing the game and also my mentor 
 Allen Thomas Varghese for his input during the mentor sessions.
+
 
 
