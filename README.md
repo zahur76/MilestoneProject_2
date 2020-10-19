@@ -98,8 +98,8 @@ performed as detailed [below](#testing). The project development cycle main step
 3. Mid project review and testing
 4. Character page programming
 5. Programming for non-existent page
-6. Final project review
-7. Final testing
+6. Final project review and testing
+7. Final adjustments made
 
 Functions for the main game were designed in the following order:
 
@@ -129,12 +129,11 @@ duplication and isssus due to responsiveness on smaller devices.
 20. Character.html page created.
 21. Styling of character home page.
 22. Functions for character.html page coded (character modal selection, home button)
-23. Star wars API included to character selection page.
-24. 404.html added page.
-25. Final project review.
-26. Adjustment made.
-27. Addition of rules link.
-28. Final testing performed.
+23. Star wars API incorporated into character selection page.
+24. 404.html and 404.md page added with styling.
+25. Project review.
+26. Addition of rules link.
+27. Modification of grid size on medium size devices.
 
 
 ## FEATURES
@@ -216,7 +215,6 @@ The '.card' class would be situated below '.character' class in css to make it t
 * If the remaining class attribute are not the same the class attribute of ".card" would be added back which would hide the character class.
 * sequence continues until all '.character' classes are exposed which is identified by using match count and grid size. 
 
-
 ## TESTING 
 
 This section provides details of testing performed during development. The following table highlights the different stages when testing were carried out:
@@ -227,8 +225,8 @@ This section provides details of testing performed during development. The follo
 |Debugging            |During the whole project                          |Chrome Devtools                                |
 |Reponsive design     |During the whole project                          |Chrome Devtools and reposnsive viewer extension|
 |Unit testing         |One check when main game functions were completed |Jasmine Framework                              |
-|User game testing    |Once Main game module was complete until the end  |n/a                                            |
-|Browser compatibility|On project completion                             |Real testing on browsers and parrotqa.com      |                    
+|User game testing    |As from when main game module was completed       |n/a                                            |
+|Browser compatibility|On project completion                             |Manual testing on browsers and parrotqa.com    |                    
 |Button/link testing  |During development and project completion         |Manual testing                                 |
 
 
@@ -421,13 +419,18 @@ was addressed by adding a loading bar gif when ever the fun facts function was c
 by changing ```flex: 1``` to ```flex-grow: 1```.</br>
 ![Image of IE](assets/doc/error1.png)
 
-9. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
+9. Another issue noticed while performing browser compatibility test was the scroll function did not work on IE and was abrupt on safari.
+After consulting documentation from [W3schools](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2) it was observed that
+the scroll function was not supported on these browsers. A modification was attempted using the animate function however this also produced
+abrupt screen movement. Consequently, the Choice was made to revert back to the original code. 
+
+10. While testing for reponsiveness using chrome dev tools it was noticed that the text below logo would change lines on smaller devices.
 This issue was addressed by changing font size.</br>
 ![Image of error](assets/doc/error2.png)
 
-10. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  the header which directs to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing generic rules on how to play. 
+11. After final project review it was decided to add instructions on how to play the game. This was achieved by adding a link to  the header which directs to a wikepdia [page](https://en.wikipedia.org/wiki/Matching_game) containing generic rules on how to play. 
 
-## DEPLOYMENT
+# DEPLOYMENT
 
 Gitpod was used as an online IDE and then pushed to GITHUB for [hosting](https://zahur76.github.io/MilestoneProject_2/).
 
